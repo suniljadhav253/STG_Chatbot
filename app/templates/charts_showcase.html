@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - RXO Logistics AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/charts_showcase.css') }}">
+    
+    <!-- Chart.js Core -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    
+    <!-- Chart.js Adapters (for time series, etc.) -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    
+    <!-- Chart.js Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1/dist/chartjs-plugin-zoom.min.js"></script>
+    
+    <!-- Specific Chart Type Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial@0.2.0/dist/chartjs-chart-financial.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-box-and-violin-plot@4.0.0/build/Chart.BoxPlot.min.js"></script> <!-- Check for latest compatible version -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-treemap@2.3.0/dist/chartjs-chart-treemap.min.js"></script>
+    <!-- Note: Sankey and complex Sunburst might require more dedicated libraries or local setup if simple CDN plugins are not sufficient/available -->
+
+</head>
+<body class="charts-showcase-page">
+    <header class="charts-showcase-header">
+        <h1>{{ title }}</h1>
+        <nav>
+            <a href="{{ url_for('main.chat') }}">Chat Assistant</a>
+            <a href="{{ url_for('main.insights_page') }}">Insights Hub</a>
+            <a href="{{ url_for('main.charts_showcase_page') }}">Chart Showcase</a>
+        </nav>
+        <button id="theme-toggle-button" aria-label="Toggle theme" style="background: #fff; color:#333; border:1px solid #ccc; padding: 5px 10px; border-radius:4px; cursor:pointer;">🌓</button>
+    </header>
+
+    <div class="charts-container-main">
+        <div class="chart-tabs">
+            <button class="tab-button active" onclick="openTab(event, 'basicCharts')">Basic Charts</button>
+            <button class="tab-button" onclick="openTab(event, 'advancedCharts')">Advanced & Specialized</button>
+            <button class="tab-button" onclick="openTab(event, 'interactiveCharts')">Interactive</button>
+            <button class="tab-button" onclick="openTab(event, 'kpiTiles')">KPI Tiles</button>
+        </div>
+
+        <!-- Basic Charts Tab -->
+        <div id="basicCharts" class="tab-content active">
+            <h2>Basic Chart Types</h2>
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <h3>Line Chart (Single Series)</h3>
+                    <div class="chart-canvas-container"><canvas id="lineChart"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Bar Chart (Vertical)</h3>
+                    <div class="chart-canvas-container"><canvas id="barChartVertical"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Bar Chart (Horizontal)</h3>
+                    <div class="chart-canvas-container"><canvas id="barChartHorizontal"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Pie Chart</h3>
+                    <div class="chart-canvas-container"><canvas id="pieChart"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Doughnut Chart</h3>
+                    <div class="chart-canvas-container"><canvas id="doughnutChart"></canvas></div>
+                </div>
+                 <div class="chart-card">
+                    <h3>Area Chart (Single Series, Filled Line)</h3>
+                    <div class="chart-canvas-container"><canvas id="areaChart"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Polar Area Chart</h3>
+                    <div class="chart-canvas-container"><canvas id="polarAreaChart"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Radar Chart</h3>
+                    <div class="chart-canvas-container"><canvas id="radarChart"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Scatter Plot</h3>
+                    <div class="chart-canvas-container"><canvas id="scatterPlot"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Bubble Chart</h3>
+                    <div class="chart-canvas-container"><canvas id="bubbleChart"></canvas></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Advanced & Specialized Charts Tab -->
+        <div id="advancedCharts" class="tab-content">
+            <h2>Advanced & Specialized Charts</h2>
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <h3>Stacked Bar Chart</h3>
+                    <div class="chart-canvas-container"><canvas id="stackedBarChart"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Grouped Bar Chart</h3>
+                    <div class="chart-canvas-container"><canvas id="groupedBarChart"></canvas></div>
+                </div>
+                 <div class="chart-card">
+                    <h3>Mixed Chart (Line + Bar)</h3>
+                    <div class="chart-canvas-container"><canvas id="mixedChart"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Step Line Chart</h3>
+                    <div class="chart-canvas-container"><canvas id="stepLineChart"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Time Series Chart (Date Adapter)</h3>
+                    <div class="chart-canvas-container"><canvas id="timeSeriesChart"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Logarithmic Scale (Line Chart)</h3>
+                    <div class="chart-canvas-container"><canvas id="logarithmicChart"></canvas></div>
+                </div>
+                 <div class="chart-card">
+                    <h3>Progress Doughnut</h3>
+                    <div class="chart-canvas-container"><canvas id="progressDoughnutChart"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Histogram (Bar Chart)</h3>
+                    <div class="chart-canvas-container"><canvas id="histogramChart"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Box & Whisker Plot</h3>
+                    <div class="chart-canvas-container"><canvas id="boxPlotChart"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Candlestick Chart (Financial)</h3>
+                    <div class="chart-canvas-container"><canvas id="candlestickChart"></canvas></div>
+                </div>
+                 <div class="chart-card">
+                    <h3>Gantt-style Chart (Horizontal Bar)</h3>
+                    <div class="chart-canvas-container"><canvas id="ganttChart"></canvas></div>
+                </div>
+                 <div class="chart-card">
+                    <h3>Funnel Chart (Custom Bar)</h3>
+                    <div class="chart-canvas-container"><canvas id="funnelChart"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Treemap Chart</h3>
+                    <div class="chart-canvas-container"><canvas id="treemapChart"></canvas></div>
+                </div>
+                 <div class="chart-card">
+                    <h3>Sunburst (Conceptual - Treemap used)</h3>
+                    <p style="font-size:0.8em; color: #666;">Note: True Sunburst often requires dedicated libraries. This uses Treemap as a placeholder.</p>
+                    <div class="chart-canvas-container"><canvas id="sunburstPlaceholderChart"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Sankey Diagram (Placeholder)</h3>
+                    <p style="font-size:0.8em; color: #666;">Note: Sankey diagrams typically require dedicated libraries (e.g., D3-Sankey or specialized Chart.js plugins not easily available via simple CDN for Chart.js 4).</p>
+                    <div class="chart-canvas-container" style="text-align:center; padding-top: 50px;">Sankey Placeholder</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Charts Tab -->
+        <div id="interactiveCharts" class="tab-content">
+            <h2>Interactive Charts</h2>
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <h3>Real-time Updating Chart (Line)</h3>
+                    <button onclick="startRealtimeData()">Start Data</button> <button onclick="stopRealtimeData()">Stop Data</button>
+                    <div class="chart-canvas-container"><canvas id="realtimeChart"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Zoom & Pan (Line Chart)</h3>
+                    <div class="chart-canvas-container"><canvas id="zoomPanChart"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Chart with Datalabels</h3>
+                    <div class="chart-canvas-container"><canvas id="datalabelsChart"></canvas></div>
+                </div>
+                <div class="chart-card">
+                    <h3>Chart with Annotations</h3>
+                    <div class="chart-canvas-container"><canvas id="annotationsChart"></canvas></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- KPI Tiles Tab -->
+        <div id="kpiTiles" class="tab-content">
+            <h2>KPI Tiles / Single Value</h2>
+            <div class="charts-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                <div class="kpi-tile">
+                    <div class="kpi-title">Total Shipments</div>
+                    <div class="kpi-value" id="kpiTotalShipments">15,203</div>
+                    <div class="kpi-change positive">+5% vs LY</div>
+                </div>
+                <div class="kpi-tile">
+                    <div class="kpi-title">Average Cost</div>
+                    <div class="kpi-value" id="kpiAverageCost">$1,280</div>
+                    <div class="kpi-change negative">-2% vs LY</div>
+                </div>
+                <div class="kpi-tile">
+                    <div class="kpi-title">On-Time Delivery</div>
+                    <div class="kpi-value" id="kpiOnTimeDelivery">98.5%</div>
+                    <div class="kpi-change positive">+0.5%</div>
+                </div>
+                 <div class="kpi-tile">
+                    <div class="kpi-title">Open Alerts</div>
+                    <div class="kpi-value" id="kpiOpenAlerts">12</div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- .charts-container-main -->
+
+    <script>
+        // Helper to generate random data
+        function getRandomData(count, min, max) {
+            return Array.from({ length: count }, () => Math.floor(Math.random() * (max - min + 1)) + min);
+        }
+        const defaultLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+        const defaultData1 = getRandomData(7, 0, 100);
+        const defaultData2 = getRandomData(7, 0, 100);
+        const defaultBgColors = [
+            'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)',
+            'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)',
+            'rgba(199, 199, 199, 0.6)'
+        ];
+        const defaultBorderColors = defaultBgColors.map(color => color.replace('0.6', '1'));
+
+        // Register plugins globally if needed (some are auto-registered)
+        Chart.register(ChartDataLabels); // Datalabels needs registration
+        Chart.register(ChartAnnotation); // Annotation plugin
+        // Zoom plugin is usually registered automatically if included.
+
+        // --- Basic Charts ---
+        new Chart(document.getElementById('lineChart'), {
+            type: 'line',
+            data: { labels: defaultLabels, datasets: [{ label: 'Dataset 1', data: defaultData1, borderColor: 'rgb(75, 192, 192)', tension: 0.1, fill: false }] },
+            options: { plugins: { title: { display: true, text: 'Simple Line Chart' }, legend: {display: false} } }
+        });
+
+        new Chart(document.getElementById('barChartVertical'), {
+            type: 'bar',
+            data: { labels: defaultLabels, datasets: [{ label: 'Votes', data: defaultData2, backgroundColor: defaultBgColors, borderColor: defaultBorderColors, borderWidth: 1 }] },
+            options: { plugins: { title: { display: true, text: 'Vertical Bar Chart' }, legend: {display: false} }, scales: { y: { beginAtZero: true } } }
+        });
+
+        new Chart(document.getElementById('barChartHorizontal'), {
+            type: 'bar',
+            data: { labels: defaultLabels, datasets: [{ label: 'Progress', data: defaultData1, backgroundColor: defaultBgColors[1] }] },
+            options: { indexAxis: 'y', plugins: { title: { display: true, text: 'Horizontal Bar Chart' }, legend: {display: false} }, scales: { x: { beginAtZero: true } } }
+        });
+
+        new Chart(document.getElementById('pieChart'), {
+            type: 'pie',
+            data: { labels: ['Red', 'Blue', 'Yellow'], datasets: [{ label: 'My First Dataset', data: [300, 50, 100], backgroundColor: [defaultBgColors[0], defaultBgColors[1], defaultBgColors[2]] }] },
+            options: { plugins: { title: { display: true, text: 'Pie Chart' } } }
+        });
+        
+        new Chart(document.getElementById('doughnutChart'), {
+            type: 'doughnut',
+            data: { labels: ['Red', 'Blue', 'Yellow'], datasets: [{ label: 'My First Dataset', data: [300, 50, 100], backgroundColor: [defaultBgColors[0], defaultBgColors[1], defaultBgColors[2]] }] },
+            options: { plugins: { title: { display: true, text: 'Doughnut Chart' } } }
+        });
+
+        new Chart(document.getElementById('areaChart'), {
+            type: 'line', // Area chart is a line chart with fill enabled
+            data: { labels: defaultLabels, datasets: [{ label: 'Revenue', data: defaultData1, borderColor: defaultBorderColors[3], backgroundColor: defaultBgColors[3], tension: 0.1, fill: true }] },
+            options: { plugins: { title: { display: true, text: 'Area Chart' }, legend: {display: false} }, scales: { y: { beginAtZero: true } } }
+        });
+
+        new Chart(document.getElementById('polarAreaChart'), {
+            type: 'polarArea',
+            data: { labels: ['Speed', 'Reliability', 'Cost', 'Support', 'Features'], datasets: [{ label: 'Product A', data: getRandomData(5,1,5), backgroundColor: defaultBgColors }] },
+            options: { plugins: { title: { display: true, text: 'Polar Area Chart' } } }
+        });
+
+        new Chart(document.getElementById('radarChart'), {
+            type: 'radar',
+            data: { labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'], datasets: [ { label: 'My First Dataset', data: getRandomData(7,0,100), fill: true, backgroundColor: 'rgba(255, 99, 132, 0.2)', borderColor: 'rgb(255, 99, 132)', pointBackgroundColor: 'rgb(255, 99, 132)', pointBorderColor: '#fff', pointHoverBackgroundColor: '#fff', pointHoverBorderColor: 'rgb(255, 99, 132)'}, { label: 'My Second Dataset', data: getRandomData(7,0,100), fill: true, backgroundColor: 'rgba(54, 162, 235, 0.2)', borderColor: 'rgb(54, 162, 235)', pointBackgroundColor: 'rgb(54, 162, 235)', pointBorderColor: '#fff', pointHoverBackgroundColor: '#fff', pointHoverBorderColor: 'rgb(54, 162, 235)'} ]},
+            options: { plugins: { title: { display: true, text: 'Radar Chart' } }, elements: { line: { borderWidth: 3 } } }
+        });
+
+        new Chart(document.getElementById('scatterPlot'), {
+            type: 'scatter',
+            data: { datasets: [{ label: 'Scatter Dataset', data: Array.from({length: 10}, () => ({ x: Math.random() * 100, y: Math.random() * 100 })), backgroundColor: defaultBgColors[0] }] },
+            options: { plugins: { title: { display: true, text: 'Scatter Plot' }, legend: {display: false} }, scales: { x: { type: 'linear', position: 'bottom' }, y: { beginAtZero: true } } }
+        });
+
+        new Chart(document.getElementById('bubbleChart'), {
+            type: 'bubble',
+            data: { datasets: [{ label: 'First Dataset', data: Array.from({length: 5}, () => ({ x: Math.random()*20, y: Math.random()*20, r: Math.random()*15+5 })), backgroundColor: defaultBgColors[1] }] },
+            options: { plugins: { title: { display: true, text: 'Bubble Chart' }, legend: {display: false} } }
+        });
+
+        // --- Advanced & Specialized Charts ---
+        new Chart(document.getElementById('stackedBarChart'), {
+            type: 'bar',
+            data: { labels: defaultLabels, datasets: [ { label: 'Dataset 1', data: defaultData1, backgroundColor: defaultBgColors[0] }, { label: 'Dataset 2', data: defaultData2, backgroundColor: defaultBgColors[1] }, { label: 'Dataset 3', data: getRandomData(7,0,100), backgroundColor: defaultBgColors[2] } ] },
+            options: { plugins: { title: { display: true, text: 'Stacked Bar Chart' } }, responsive: true, scales: { x: { stacked: true }, y: { stacked: true, beginAtZero: true } } }
+        });
+
+        new Chart(document.getElementById('groupedBarChart'), {
+            type: 'bar',
+            data: { labels: defaultLabels, datasets: [ { label: 'Series A', data: defaultData1, backgroundColor: defaultBgColors[3] }, { label: 'Series B', data: defaultData2, backgroundColor: defaultBgColors[4] } ] },
+            options: { plugins: { title: { display: true, text: 'Grouped Bar Chart' } }, responsive: true, scales: { y: { beginAtZero: true } } } // x/y stacked:false is default
+        });
+        
+        new Chart(document.getElementById('mixedChart'), {
+            type: 'bar', // Default type, individual datasets can override
+            data: { labels: defaultLabels, datasets: [ { type: 'bar', label: 'Bar Dataset', data: defaultData1, backgroundColor: defaultBgColors[0], order: 2 }, { type: 'line', label: 'Line Dataset', data: defaultData2, borderColor: defaultBorderColors[1], tension: 0.1, fill: false, order: 1 } ] },
+            options: { plugins: { title: { display: true, text: 'Mixed Chart (Bar and Line)' } }, scales: { y: { beginAtZero: true } } }
+        });
+
+        new Chart(document.getElementById('stepLineChart'), {
+            type: 'line',
+            data: { labels: defaultLabels, datasets: [{ label: 'Step Data', data: defaultData1, borderColor: defaultBorderColors[2], fill: false, stepped: true }] },
+            options: { plugins: { title: { display: true, text: 'Step Line Chart' }, legend: {display:false} } }
+        });
+        
+        new Chart(document.getElementById('timeSeriesChart'), {
+            type: 'line',
+            data: { datasets: [{ label: 'Stock Price', data: [ {x: new Date('2023-01-01').valueOf(), y: 65}, {x: new Date('2023-01-02').valueOf(), y: 59}, {x: new Date('2023-01-03').valueOf(), y: 80}, {x: new Date('2023-01-04').valueOf(), y: 81}, {x: new Date('2023-01-05').valueOf(), y: 56} ], borderColor: defaultBorderColors[3], fill: false }] },
+            options: { plugins: { title: { display: true, text: 'Time Series Chart (Date Adapter)' }, legend: {display:false} }, scales: { x: { type: 'time', time: { unit: 'day' } }, y: { beginAtZero: false } } }
+        });
+
+        new Chart(document.getElementById('logarithmicChart'), {
+            type: 'line',
+            data: { labels: [1,2,3,4,5,6,7,8,9,10], datasets: [{ label: 'Exponential Growth', data: [1, 10, 100, 1000, 10000, 100000, 1000000], borderColor: defaultBorderColors[4], fill: false }] },
+            options: { plugins: { title: { display: true, text: 'Logarithmic Scale (Y-Axis)' }, legend: {display:false} }, scales: { y: { type: 'logarithmic', beginAtZero: false } } }
+        });
+
+        new Chart(document.getElementById('progressDoughnutChart'), {
+            type: 'doughnut',
+            data: { labels: ['Completed', 'Remaining'], datasets: [{ data: [75, 25], backgroundColor: [defaultBgColors[5], '#E0E0E0'], borderWidth:0 }] },
+            options: { plugins: { title: { display: true, text: 'Progress Doughnut (75%)' }, legend: {display:false} }, cutout: '70%', elements: { arc: { roundedCorners: 0, borderWidth:0 } } } // ChartJS 4.x uses roundedCorners
+        });
+
+        const histogramData = getRandomData(200, 0, 100);
+        new Chart(document.getElementById('histogramChart'), {
+            type: 'bar',
+            data: { labels: ['0-10', '10-20', '20-30', '30-40', '40-50', '50-60', '60-70', '70-80', '80-90', '90-100'], datasets: [{ label: 'Frequency', data: Array(10).fill(0).map((_, i) => histogramData.filter(d => d >= i*10 && d < (i+1)*10).length), backgroundColor: defaultBgColors[0] }] },
+            options: { plugins: { title: { display: true, text: 'Histogram' }, legend: {display:false} }, scales: { x: { categoryPercentage: 1.0, barPercentage: 1.0 }, y: { beginAtZero: true } } }
+        });
+        
+        if (typeof ChartBoxPlot !== 'undefined') {
+            new Chart(document.getElementById('boxPlotChart'), {
+                type: 'boxplot', // Requires chartjs-chart-box-and-violin-plot
+                data: { labels: ['Set A', 'Set B'], datasets: [{ label: 'Sample Data', data: [getRandomData(50, 20,80), getRandomData(50, 30,90)], backgroundColor: defaultBgColors[1], borderColor: defaultBorderColors[1], borderWidth: 1 }] },
+                options: { plugins: { title: { display: true, text: 'Box & Whisker Plot' } } }
+            });
+        } else { document.getElementById('boxPlotChart').parentElement.innerHTML += '<p>BoxPlot plugin not loaded.</p>'; }
+
+        if (typeof ChartFinancial !== 'undefined') {
+            const ohlcData = [ {x:new Date('2023-01-01').valueOf(), o:10,h:15,l:8,c:12}, {x:new Date('2023-01-02').valueOf(), o:12,h:18,l:10,c:17}, {x:new Date('2023-01-03').valueOf(), o:17,h:20,l:15,c:18} ];
+            new Chart(document.getElementById('candlestickChart'), {
+                type: 'candlestick', // Requires chartjs-chart-financial
+                data: { datasets: [{ label: 'Stock Price', data: ohlcData, }] }, // Colors are usually handled by plugin defaults or specific options
+                options: { plugins: { title: { display: true, text: 'Candlestick Chart' }, legend:{display:false} }, scales: {x: {type: 'time'}} }
+            });
+        } else { document.getElementById('candlestickChart').parentElement.innerHTML += '<p>Financial Chart plugin not loaded.</p>'; }
+        
+        new Chart(document.getElementById('ganttChart'), {
+            type: 'bar',
+            data: { labels: ['Task A', 'Task B', 'Task C'], datasets: [{ label: 'Duration', data: [ [new Date('2023-01-01').valueOf(), new Date('2023-01-05').valueOf()], [new Date('2023-01-03').valueOf(), new Date('2023-01-08').valueOf()], [new Date('2023-01-06').valueOf(), new Date('2023-01-10').valueOf()] ], backgroundColor: defaultBgColors[4] }] },
+            options: { indexAxis: 'y', plugins: { title: { display: true, text: 'Gantt-style Chart (Horizontal Bar)' }, legend:{display:false} }, scales: { x: { type: 'time', time: { unit: 'day' }, min: new Date('2023-01-01').valueOf(), max: new Date('2023-01-12').valueOf() } } }
+        });
+
+        new Chart(document.getElementById('funnelChart'), {
+            type: 'bar',
+            data: { labels: ['Prospects', 'Leads', 'Opportunities', 'Customers'], datasets: [{ label: 'Sales Funnel', data: [100, 60, 30, 15], backgroundColor: defaultBgColors.slice(0,4) }] },
+            options: { indexAxis: 'y', plugins: { title: { display: true, text: 'Funnel Chart (Custom Bar)' }, legend:{display:false} }, scales: { x: { beginAtZero: true, display: false }, y: { barPercentage: 0.5, categoryPercentage: 0.8} }, elements: { bar: { borderWidth: 2, borderRadius: {topLeft: 20, topRight: 20, bottomLeft:20, bottomRight:20}} } } // Approximation
+        });
+        
+        if (typeof TreemapController !== 'undefined' && typeof TreemapElement !== 'undefined') {
+            Chart.register(TreemapController, TreemapElement); // Register Treemap
+            new Chart(document.getElementById('treemapChart'), {
+                type: 'treemap',
+                data: { datasets: [{
+                    label: 'Sales Data', tree: [ {value: 10, group: 'A'}, {value: 6, group: 'A'}, {value: 4, group: 'B'}, {value: 14, group: 'C'}, {value: 8, group: 'C'} ],
+                    key: 'value', groups: ['group'],
+                    backgroundColor: (ctx) => defaultBgColors[ctx.dataIndex % defaultBgColors.length],
+                    labels: { display: true, formatter(ctx) { return `${ctx.raw.g}: ${ctx.raw.v}`; } }
+                }] },
+                options: { plugins: { title: { display: true, text: 'Treemap Chart' }, legend: {display:false} } }
+            });
+            // Placeholder for Sunburst using Treemap logic (true Sunburst is more complex)
+             new Chart(document.getElementById('sunburstPlaceholderChart'), {
+                type: 'treemap',
+                data: { datasets: [{
+                    label: 'Hierarchy Data', tree: [ {value: 10, group: 'A', subgroup:'A1'}, {value: 6, group: 'A', subgroup:'A2'}, {value: 4, group: 'B', subgroup:'B1'}, {value: 14, group: 'C', subgroup:'C1'}, {value: 8, group: 'C', subgroup:'C2'} ],
+                    key: 'value', groups: ['group', 'subgroup'], // Hierarchical
+                    backgroundColor: (ctx) => defaultBgColors[ctx.dataIndex % defaultBgColors.length],
+                    labels: { display: true, formatter(ctx) { return `${ctx.raw.g} / ${ctx.raw._data.subgroup}: ${ctx.raw.v}`; } }
+                }] },
+                options: { plugins: { title: { display: true, text: 'Sunburst-like Treemap' }, legend: {display:false} } }
+            });
+
+        } else { 
+            document.getElementById('treemapChart').parentElement.innerHTML += '<p>Treemap plugin not loaded.</p>';
+            document.getElementById('sunburstPlaceholderChart').parentElement.innerHTML += '<p>Treemap plugin (for Sunburst placeholder) not loaded.</p>';
+        }
+
+
+        // --- Interactive Charts ---
+        let realtimeInterval;
+        let realtimeChartInstance;
+        function addDataToRealtimeChart() {
+            if (realtimeChartInstance.data.labels.length > 10) { // Keep a fixed window
+                realtimeChartInstance.data.labels.shift();
+                realtimeChartInstance.data.datasets.forEach((dataset) => { dataset.data.shift(); });
+            }
+            realtimeChartInstance.data.labels.push(new Date().toLocaleTimeString());
+            realtimeChartInstance.data.datasets.forEach((dataset) => { dataset.data.push(Math.random() * 100); });
+            realtimeChartInstance.update('quiet');
+        }
+        window.startRealtimeData = function() {
+            if(realtimeInterval) clearInterval(realtimeInterval);
+            realtimeInterval = setInterval(addDataToRealtimeChart, 2000);
+        }
+        window.stopRealtimeData = function() { clearInterval(realtimeInterval); }
+
+        realtimeChartInstance = new Chart(document.getElementById('realtimeChart'), {
+            type: 'line',
+            data: { labels: [], datasets: [{ label: 'Live Data', data: [], borderColor: defaultBorderColors[0], tension: 0.2, fill:false }] },
+            options: { plugins: { title: { display: true, text: 'Real-time Updating Chart' }, legend:{display:false} }, scales: { y: { beginAtZero: true, max: 100 } } }
+        });
+
+        new Chart(document.getElementById('zoomPanChart'), {
+            type: 'line',
+            data: { labels: defaultLabels.concat(['Aug','Sep','Oct','Nov','Dec']), datasets: [{ label: 'Zoomable Data', data: getRandomData(12, 20, 80), borderColor: defaultBorderColors[1], fill:false }] },
+            options: { plugins: { title: { display: true, text: 'Zoom & Pan Enabled' }, legend:{display:false}, zoom: { pan: { enabled: true, mode: 'xy' }, zoom: { wheel: { enabled: true }, pinch: { enabled: true }, mode: 'xy' } } } }
+        });
+
+        new Chart(document.getElementById('datalabelsChart'), {
+            type: 'bar',
+            data: { labels: ['A', 'B', 'C', 'D'], datasets: [{ label: 'Values', data: getRandomData(4,10,50), backgroundColor: defaultBgColors.slice(0,4) }] },
+            options: { plugins: { title: { display: true, text: 'Chart with Datalabels' }, legend:{display:false}, datalabels: { anchor: 'end', align: 'top', formatter: Math.round, font: { weight: 'bold' } } } }
+        });
+        
+        new Chart(document.getElementById('annotationsChart'), {
+            type: 'line',
+            data: { labels: defaultLabels, datasets: [{ label: 'Data with Threshold', data: defaultData1, borderColor: defaultBorderColors[2], fill:false }] },
+            options: { plugins: { title: { display: true, text: 'Chart with Annotations' }, legend:{display:false}, annotation: { annotations: { line1: { type: 'line', yMin: 60, yMax: 60, borderColor: 'red', borderWidth: 2, label: { content: 'Threshold', display: true, position: 'end' } } } } } }
+        });
+
+        // Tab switching logic
+        window.openTab = function(evt, tabName) {
+            var i, tabcontent, tabbuttons;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tabbuttons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabbuttons.length; i++) {
+                tabbuttons[i].className = tabbuttons[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        // Theme toggle logic
+        const themeToggleButton = document.getElementById('theme-toggle-button');
+        if (themeToggleButton) {
+            themeToggleButton.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+            });
+        }
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+
+    </script>
+</body>
+</html>

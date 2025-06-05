@@ -1,0 +1,215 @@
+/* app/static/css/charts_showcase.css */
+body.charts-showcase-page {
+    font-family: 'Inter', sans-serif; /* Assuming Inter is loaded or use a fallback */
+    background-color: #f4f6f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.charts-showcase-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.charts-showcase-header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+.charts-showcase-header nav a {
+    color: #b0c4de;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.charts-showcase-header nav a:hover {
+    color: white;
+}
+
+
+.charts-container-main {
+    padding: 20px;
+    max-width: 1600px;
+    margin: 20px auto;
+}
+
+.chart-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 1em;
+    font-weight: 500;
+    color: #495057;
+    border-bottom: 2px solid transparent; /* For active state */
+    margin-bottom: -2px; /* Align with container border */
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.tab-button:hover {
+    color: #007bff;
+}
+
+.tab-button.active {
+    color: #007bff;
+    border-bottom-color: #007bff;
+    font-weight: 600;
+}
+
+.tab-content {
+    display: none; /* Hidden by default, shown by JS */
+    animation: fadeIn 0.5s;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive grid */
+    gap: 25px;
+}
+
+.chart-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    min-height: 350px; /* Ensure cards have some height */
+}
+
+.chart-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #343a40;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.chart-canvas-container {
+    flex-grow: 1; /* Allow canvas container to fill space */
+    position: relative; /* For Chart.js responsiveness */
+    min-height: 250px; /* Minimum height for the canvas area */
+}
+
+.chart-canvas-container canvas {
+    max-width: 100%;
+    max-height: 100%; /* Ensure canvas fits if container has fixed height */
+}
+
+/* KPI Tile Styling */
+.kpi-tile {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.kpi-tile .kpi-title {
+    font-size: 1em;
+    color: #6c757d;
+    margin-bottom: 8px;
+}
+.kpi-tile .kpi-value {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #007bff;
+}
+.kpi-tile .kpi-change {
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+.kpi-tile .kpi-change.positive { color: #28a745; }
+.kpi-tile .kpi-change.negative { color: #dc3545; }
+
+
+/* Dark Mode for Showcase Page */
+body.charts-showcase-page.dark-mode {
+    background-color: #12121e;
+    color: #e0e0e0;
+}
+
+body.charts-showcase-page.dark-mode .charts-showcase-header {
+    background-color: #1e1e2f;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+body.charts-showcase-page.dark-mode .charts-showcase-header nav a {
+    color: #8899aa;
+}
+body.charts-showcase-page.dark-mode .charts-showcase-header nav a:hover {
+    color: #e0e0ff;
+}
+
+
+body.charts-showcase-page.dark-mode .chart-tabs {
+    border-bottom-color: #3a3a5a;
+}
+body.charts-showcase-page.dark-mode .tab-button {
+    color: #a0a0c0;
+}
+body.charts-showcase-page.dark-mode .tab-button:hover {
+    color: #87CEFA; /* Light Sky Blue for hover */
+}
+body.charts-showcase-page.dark-mode .tab-button.active {
+    color: #87CEFA;
+    border-bottom-color: #87CEFA;
+}
+
+body.charts-showcase-page.dark-mode .chart-card {
+    background-color: #2c2c44;
+    border: 1px solid #3a3a5a;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+body.charts-showcase-page.dark-mode .chart-card h3 {
+    color: #e0e0ff;
+    border-bottom-color: #3a3a5a;
+}
+body.charts-showcase-page.dark-mode .kpi-tile {
+    background-color: #2c2c44;
+    border: 1px solid #3a3a5a;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+body.charts-showcase-page.dark-mode .kpi-tile .kpi-title {
+    color: #a0a0c0;
+}
+body.charts-showcase-page.dark-mode .kpi-tile .kpi-value {
+    color: #87CEFA;
+}
+body.charts-showcase-page.dark-mode .kpi-tile .kpi-change.positive { color: #5cb85c; } /* Brighter green */
+body.charts-showcase-page.dark-mode .kpi-tile .kpi-change.negative { color: #d9534f; } /* Brighter red */
+
+/* Ensure Chart.js tooltips and legends are styled for dark mode if needed */
+/* Chart.js usually picks up body text color, but sometimes needs explicit styling for tooltips */
+.chartjs-tooltip { /* Default Chart.js tooltip class */
+    background: rgba(0,0,0,0.7) !important;
+    color: white !important;
+    border-radius: 4px !important;
+    padding: 8px !important;
+}
+body.dark-mode .chartjs-legend li span { /* Example for legend text color */
+    color: #e0e0e0 !important; 
+}
+/* You might need to inspect Chart.js generated elements for more specific dark mode styling */

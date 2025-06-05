@@ -1,0 +1,13 @@
+# .gitignore
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.env
+chroma_data/ # If you plan to store ChromaDB data locally and don't want to commit it
+
+# IDE specific
+.idea/
+.vscode/

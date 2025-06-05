@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Assistant - RXO Logistics AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/charts.css') }}"> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script> 
+    <!-- Optional: date adapter for time scales, if you use it extensively -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script> -->
+</head>
+<body>
+    <header>
+        <h1>RXO Logistics AI</h1>
+        <nav>
+            <a href="{{ url_for('main.chat') }}">Chat Assistant</a>
+            <a href="{{ url_for('main.insights_page') }}">Insights Hub</a>
+            <a href="{{ url_for('main.charts_showcase_page') }}">Chart Showcase</a>
+        </nav>
+        <button id="theme-toggle-button" aria-label="Toggle theme">🌓</button>
+    </header>
+
+    <main id="chat-container">
+        <div id="conversation-view">
+            {% if welcome_message %}
+            <div class="message ai-message">
+                <p class="message-text">{{ welcome_message }}</p>
+            </div>
+            {% endif %}
+            <!-- Messages will be dynamically added here -->
+        </div>
+        <div id="input-area">
+            <input type="text" id="user-input" placeholder="Ask about your shipments, delays, or costs..." autocomplete="off">
+            <button id="send-button" title="Send message">→</button> 
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 RXO Logistics</p>
+    </footer>
+    
+    <!-- Workplace Selection Modal (hidden by default) -->
+    <div id="workplace-selection-modal" class="workplace-modal" style="display: none;">
+        <h4>Save Insight to Workplace</h4>
+        <label for="workplace-select">Select Existing Workplace:</label>
+        <select id="workplace-select">
+            {!-- Options will be populated by JS --}
+            <option value="">-- Select or Create New --</option>
+        </select>
+        <hr style="margin: 15px 0;">
+        <label for="new-workplace-name">Or Create New Workplace:</label>
+        <input type="text" id="new-workplace-name" placeholder="Enter new workplace name">
+        <div style="text-align: right; margin-top:15px;">
+            <button id="save-to-selected-workplace-btn" class="primary">Save</button>
+            <button id="cancel-workplace-selection-btn" class="secondary">Cancel</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+    <script>
+        // Basic theme toggle logic (can be moved to a shared JS file if preferred)
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleButton = document.getElementById('theme-toggle-button');
+            const body = document.body;
+
+            function applyTheme(theme) {
+                if (theme === 'dark') {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+
+            if (themeToggleButton) {
+                themeToggleButton.addEventListener('click', () => {
+                    body.classList.toggle('dark-mode');
+                    localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
+                });
+            }
+            // Load saved theme preference on page load
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                applyTheme(savedTheme);
+            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                // Optional: default to system preference if no user preference
+                applyTheme('dark');
+            }
+        });
+    </script>
+</body>
+</html>

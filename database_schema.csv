@@ -1,0 +1,692 @@
+﻿mainTableName,COLUMN_NAME,referenceTableName,refColumnName,DATA_TYPE,TABLE_DESCRIPTION,COLUMN_DESCRIPTION
+OTM.ALLOCATION_BASE,ALLOC_SEQ_NO,,,bigint,Stores all location master data used across shipments and orders.,Business-specific data stored in column ALLOC_SEQ_NO.
+OTM.ALLOCATION_BASE,ALLOC_TYPE_QUAL_GID,,,datetime,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_BASE,ALLOCATED_COST,,,float,Stores all location master data used across shipments and orders.,Business-specific data stored in column ALLOCATED_COST.
+OTM.ALLOCATION_BASE,ALLOCATED_COST_BASE,,,float,Stores all location master data used across shipments and orders.,Business-specific data stored in column ALLOCATED_COST_BASE.
+OTM.ALLOCATION_BASE,ALLOCATED_COST_CURRENCY_GID,,,datetime,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_BASE,ALLOCATED_COST_FN,,,float,Stores all location master data used across shipments and orders.,Business-specific data stored in column ALLOCATED_COST_FN.
+OTM.ALLOCATION_BASE,ALLOCATED_COST_FN_CURRENCY_GID,,,float,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_BASE,DOMAIN_NAME,,,datetime,Stores all location master data used across shipments and orders.,Business-specific data stored in column DOMAIN_NAME.
+OTM.ALLOCATION_BASE,EXCHANGE_RATE_DATE,,,datetime,Stores all location master data used across shipments and orders.,Date or timestamp associated with the transaction or event.
+OTM.ALLOCATION_BASE,EXCHANGE_RATE_GID,,,datetime,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_BASE,INSERT_DATE,,,datetime,Stores all location master data used across shipments and orders.,Date or timestamp associated with the transaction or event.
+OTM.ALLOCATION_BASE,INSERT_USER,,,datetime,Stores all location master data used across shipments and orders.,Business-specific data stored in column INSERT_USER.
+OTM.ALLOCATION_BASE,INVOICE_GID,,,datetime,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_BASE,MTBI_BUSINESS_UNIT,,,float,Stores all location master data used across shipments and orders.,Business-specific data stored in column MTBI_BUSINESS_UNIT.
+OTM.ALLOCATION_BASE,PARENT_INVOICE_GID,,,float,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_BASE,SHIPMENT_GID,,,datetime,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_BASE,TIMESTAMP,,,datetime,Stores all location master data used across shipments and orders.,Business-specific data stored in column TIMESTAMP.
+OTM.ALLOCATION_BASE,UPDATE_DATE,,,float,Stores all location master data used across shipments and orders.,Date or timestamp associated with the transaction or event.
+OTM.ALLOCATION_BASE,UPDATE_USER,,,float,Stores all location master data used across shipments and orders.,Business-specific data stored in column UPDATE_USER.
+OTM.ALLOCATION_BASE,VOUCHER_GID,,,datetime,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_D,ALLOC_SEQ_NO,,,bigint,Stores all location master data used across shipments and orders.,Business-specific data stored in column ALLOC_SEQ_NO.
+OTM.ALLOCATION_D,BASE_COST,,,float,Stores all location master data used across shipments and orders.,Business-specific data stored in column BASE_COST.
+OTM.ALLOCATION_D,BASE_COST_BASE,,,float,Stores all location master data used across shipments and orders.,Business-specific data stored in column BASE_COST_BASE.
+OTM.ALLOCATION_D,BASE_COST_CURRENCY_GID,,,datetime,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_D,BASE_COST_FN,,,float,Stores all location master data used across shipments and orders.,Business-specific data stored in column BASE_COST_FN.
+OTM.ALLOCATION_D,BASE_COST_FN_CURRENCY_GID,,,float,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_D,DOMAIN_NAME,,,datetime,Stores all location master data used across shipments and orders.,Business-specific data stored in column DOMAIN_NAME.
+OTM.ALLOCATION_D,EXCHANGE_RATE_DATE,,,datetime,Stores all location master data used across shipments and orders.,Date or timestamp associated with the transaction or event.
+OTM.ALLOCATION_D,EXCHANGE_RATE_GID,,,datetime,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_D,INSERT_DATE,,,datetime,Stores all location master data used across shipments and orders.,Date or timestamp associated with the transaction or event.
+OTM.ALLOCATION_D,INSERT_USER,,,datetime,Stores all location master data used across shipments and orders.,Business-specific data stored in column INSERT_USER.
+OTM.ALLOCATION_D,MTBI_BUSINESS_UNIT,,,float,Stores all location master data used across shipments and orders.,Business-specific data stored in column MTBI_BUSINESS_UNIT.
+OTM.ALLOCATION_D,ORDER_RELEASE_GID,,,datetime,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_D,ORDER_RELEASE_LINE_GID,,,datetime,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_D,PACKAGED_ITEM_GID,,,datetime,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_D,PRIVATE_COST,,,bigint,Stores all location master data used across shipments and orders.,Business-specific data stored in column PRIVATE_COST.
+OTM.ALLOCATION_D,PRIVATE_COST_BASE,,,bigint,Stores all location master data used across shipments and orders.,Business-specific data stored in column PRIVATE_COST_BASE.
+OTM.ALLOCATION_D,PRIVATE_COST_CURRENCY_GID,,,datetime,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_D,SHIPMENT_GID,,,datetime,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_D,T_LINE_COST_CURRENCY_GID,,,datetime,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_D,TOTAL_ALLOC_C_FN,,,float,Stores all location master data used across shipments and orders.,Business-specific data stored in column TOTAL_ALLOC_C_FN.
+OTM.ALLOCATION_D,TOTAL_ALLOC_C_FN_CURRENCY_GID,,,float,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_D,TOTAL_ALLOC_LINE_COST,,,float,Stores all location master data used across shipments and orders.,Business-specific data stored in column TOTAL_ALLOC_LINE_COST.
+OTM.ALLOCATION_D,TOTAL_ALLOC_LINE_COST_BASE,,,float,Stores all location master data used across shipments and orders.,Business-specific data stored in column TOTAL_ALLOC_LINE_COST_BASE.
+OTM.ALLOCATION_D,UPDATE_DATE,,,float,Stores all location master data used across shipments and orders.,Date or timestamp associated with the transaction or event.
+OTM.ALLOCATION_D,UPDATE_USER,,,float,Stores all location master data used across shipments and orders.,Business-specific data stored in column UPDATE_USER.
+OTM.ALLOCATION_OR_LINE_D,ACCESSORIAL_CODE_GID,,,datetime,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_OR_LINE_D,ALLOC_COST_SEQNO,,,bigint,Stores all location master data used across shipments and orders.,Business-specific data stored in column ALLOC_COST_SEQNO.
+OTM.ALLOCATION_OR_LINE_D,ALLOC_SEQ_NO,,,bigint,Stores all location master data used across shipments and orders.,Business-specific data stored in column ALLOC_SEQ_NO.
+OTM.ALLOCATION_OR_LINE_D,COST,,,float,Stores all location master data used across shipments and orders.,Business-specific data stored in column COST.
+OTM.ALLOCATION_OR_LINE_D,COST_BASE,,,float,Stores all location master data used across shipments and orders.,Business-specific data stored in column COST_BASE.
+OTM.ALLOCATION_OR_LINE_D,COST_CURRENCY_GID,,,datetime,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_OR_LINE_D,COST_DESCRIPTION,,,datetime,Stores all location master data used across shipments and orders.,Business-specific data stored in column COST_DESCRIPTION.
+OTM.ALLOCATION_OR_LINE_D,COST_FN,,,float,Stores all location master data used across shipments and orders.,Business-specific data stored in column COST_FN.
+OTM.ALLOCATION_OR_LINE_D,COST_FN_CURRENCY_GID,,,float,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_OR_LINE_D,COST_TYPE_GID,,,datetime,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_OR_LINE_D,DOMAIN_NAME,,,datetime,Stores all location master data used across shipments and orders.,Business-specific data stored in column DOMAIN_NAME.
+OTM.ALLOCATION_OR_LINE_D,EXCHANGE_RATE_DATE,,,datetime,Stores all location master data used across shipments and orders.,Date or timestamp associated with the transaction or event.
+OTM.ALLOCATION_OR_LINE_D,EXCHANGE_RATE_GID,,,datetime,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_OR_LINE_D,GENERAL_LEDGER_GID,,,float,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_OR_LINE_D,INSERT_DATE,,,datetime,Stores all location master data used across shipments and orders.,Date or timestamp associated with the transaction or event.
+OTM.ALLOCATION_OR_LINE_D,INSERT_USER,,,datetime,Stores all location master data used across shipments and orders.,Business-specific data stored in column INSERT_USER.
+OTM.ALLOCATION_OR_LINE_D,INVOICE_GID,,,datetime,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_OR_LINE_D,LINEITEM_SEQ_NO,,,float,Stores all location master data used across shipments and orders.,Business-specific data stored in column LINEITEM_SEQ_NO.
+OTM.ALLOCATION_OR_LINE_D,MTBI_BUSINESS_UNIT,,,float,Stores all location master data used across shipments and orders.,Business-specific data stored in column MTBI_BUSINESS_UNIT.
+OTM.ALLOCATION_OR_LINE_D,ORDER_RELEASE_LINE_GID,,,datetime,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.ALLOCATION_OR_LINE_D,UPDATE_DATE,,,float,Stores all location master data used across shipments and orders.,Date or timestamp associated with the transaction or event.
+OTM.ALLOCATION_OR_LINE_D,UPDATE_USER,,,float,Stores all location master data used across shipments and orders.,Business-specific data stored in column UPDATE_USER.
+OTM.LOCATION,ALLOW_DRIVER_REST,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ALLOW_DRIVER_REST.
+OTM.LOCATION,APPOINT_DISPLAY,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column APPOINT_DISPLAY.
+OTM.LOCATION,APPOINT_DISPLAY_BASE,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column APPOINT_DISPLAY_BASE.
+OTM.LOCATION,APPOINT_DISPLAY_START_TIME,,,nvarchar,Stores all location master data used across shipments and orders.,Date or timestamp associated with the transaction or event.
+OTM.LOCATION,APPOINT_DISPLAY_UOM_CODE,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column APPOINT_DISPLAY_UOM_CODE.
+OTM.LOCATION,APPOINTMENT_ACTIVITY_TYPE,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column APPOINTMENT_ACTIVITY_TYPE.
+OTM.LOCATION,APPT_OBJECT_TYPE,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column APPT_OBJECT_TYPE.
+OTM.LOCATION,APPT_SEARCH_DAYS,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column APPT_SEARCH_DAYS.
+OTM.LOCATION,APPT_SHOW_NUMBER_OF_OPTIONS,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column APPT_SHOW_NUMBER_OF_OPTIONS.
+OTM.LOCATION,ATTRIBUTE_DATE1,,,nvarchar,Stores all location master data used across shipments and orders.,Generic attribute used for custom business data.
+OTM.LOCATION,ATTRIBUTE_DATE10,,,nvarchar,Stores all location master data used across shipments and orders.,Generic attribute used for custom business data.
+OTM.LOCATION,ATTRIBUTE_DATE2,,,nvarchar,Stores all location master data used across shipments and orders.,Generic attribute used for custom business data.
+OTM.LOCATION,ATTRIBUTE_DATE3,,,nvarchar,Stores all location master data used across shipments and orders.,Generic attribute used for custom business data.
+OTM.LOCATION,ATTRIBUTE_DATE4,,,nvarchar,Stores all location master data used across shipments and orders.,Generic attribute used for custom business data.
+OTM.LOCATION,ATTRIBUTE_DATE5,,,nvarchar,Stores all location master data used across shipments and orders.,Generic attribute used for custom business data.
+OTM.LOCATION,ATTRIBUTE_DATE6,,,nvarchar,Stores all location master data used across shipments and orders.,Generic attribute used for custom business data.
+OTM.LOCATION,ATTRIBUTE_DATE7,,,nvarchar,Stores all location master data used across shipments and orders.,Generic attribute used for custom business data.
+OTM.LOCATION,ATTRIBUTE_DATE8,,,nvarchar,Stores all location master data used across shipments and orders.,Generic attribute used for custom business data.
+OTM.LOCATION,ATTRIBUTE_DATE9,,,nvarchar,Stores all location master data used across shipments and orders.,Generic attribute used for custom business data.
+OTM.LOCATION,ATTRIBUTE_NUMBER1,,,nvarchar,Stores all location master data used across shipments and orders.,Generic attribute used for custom business data.
+OTM.LOCATION,ATTRIBUTE_NUMBER10,,,nvarchar,Stores all location master data used across shipments and orders.,Generic attribute used for custom business data.
+OTM.LOCATION,ATTRIBUTE_NUMBER2,,,nvarchar,Stores all location master data used across shipments and orders.,Generic attribute used for custom business data.
+OTM.LOCATION,ATTRIBUTE_NUMBER3,,,nvarchar,Stores all location master data used across shipments and orders.,Generic attribute used for custom business data.
+OTM.LOCATION,ATTRIBUTE_NUMBER4,,,nvarchar,Stores all location master data used across shipments and orders.,Generic attribute used for custom business data.
+OTM.LOCATION,ATTRIBUTE_NUMBER5,,,nvarchar,Stores all location master data used across shipments and orders.,Generic attribute used for custom business data.
+OTM.LOCATION,ATTRIBUTE_NUMBER6,,,nvarchar,Stores all location master data used across shipments and orders.,Generic attribute used for custom business data.
+OTM.LOCATION,ATTRIBUTE_NUMBER7,,,nvarchar,Stores all location master data used across shipments and orders.,Generic attribute used for custom business data.
+OTM.LOCATION,ATTRIBUTE_NUMBER8,,,nvarchar,Stores all location master data used across shipments and orders.,Generic attribute used for custom business data.
+OTM.LOCATION,ATTRIBUTE_NUMBER9,,,nvarchar,Stores all location master data used across shipments and orders.,Generic attribute used for custom business data.
+OTM.LOCATION,ATTRIBUTE1,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ATTRIBUTE1.
+OTM.LOCATION,ATTRIBUTE10,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ATTRIBUTE10.
+OTM.LOCATION,ATTRIBUTE11,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ATTRIBUTE11.
+OTM.LOCATION,ATTRIBUTE12,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ATTRIBUTE12.
+OTM.LOCATION,ATTRIBUTE13,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ATTRIBUTE13.
+OTM.LOCATION,ATTRIBUTE14,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ATTRIBUTE14.
+OTM.LOCATION,ATTRIBUTE15,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ATTRIBUTE15.
+OTM.LOCATION,ATTRIBUTE16,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ATTRIBUTE16.
+OTM.LOCATION,ATTRIBUTE17,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ATTRIBUTE17.
+OTM.LOCATION,ATTRIBUTE18,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ATTRIBUTE18.
+OTM.LOCATION,ATTRIBUTE19,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ATTRIBUTE19.
+OTM.LOCATION,ATTRIBUTE2,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ATTRIBUTE2.
+OTM.LOCATION,ATTRIBUTE20,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ATTRIBUTE20.
+OTM.LOCATION,ATTRIBUTE3,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ATTRIBUTE3.
+OTM.LOCATION,ATTRIBUTE4,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ATTRIBUTE4.
+OTM.LOCATION,ATTRIBUTE5,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ATTRIBUTE5.
+OTM.LOCATION,ATTRIBUTE6,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ATTRIBUTE6.
+OTM.LOCATION,ATTRIBUTE7,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ATTRIBUTE7.
+OTM.LOCATION,ATTRIBUTE8,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ATTRIBUTE8.
+OTM.LOCATION,ATTRIBUTE9,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ATTRIBUTE9.
+OTM.LOCATION,BB_IS_NEW_STORE,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column BB_IS_NEW_STORE.
+OTM.LOCATION,BB_MAX_CASES_PER_BATCH,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column BB_MAX_CASES_PER_BATCH.
+OTM.LOCATION,BB_ORDER_SPLIT_METHOD,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column BB_ORDER_SPLIT_METHOD.
+OTM.LOCATION,CITY,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column CITY.
+OTM.LOCATION,COUNTRY_CODE3_GID,,,nvarchar,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.LOCATION,COUNTY_QUALIFIER,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column COUNTY_QUALIFIER.
+OTM.LOCATION,DELIVERY_GROUP_NAME,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column DELIVERY_GROUP_NAME.
+OTM.LOCATION,DESCRIPTION,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column DESCRIPTION.
+OTM.LOCATION,DOMAIN_NAME,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column DOMAIN_NAME.
+OTM.LOCATION,DROPOFF_ROUTING_SEQUENCE_GID,,,nvarchar,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.LOCATION,ENFORCE_TIME_WINDOW_APPOINT,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ENFORCE_TIME_WINDOW_APPOINT.
+OTM.LOCATION,EQUIPMENT_GROUP_PROFILE_GID,,,nvarchar,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.LOCATION,ERPC_GID,,,nvarchar,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.LOCATION,EXCLUDE_FROM_ROUTE_EXECUTION,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column EXCLUDE_FROM_ROUTE_EXECUTION.
+OTM.LOCATION,INSERT_DATE,,,nvarchar,Stores all location master data used across shipments and orders.,Date or timestamp associated with the transaction or event.
+OTM.LOCATION,INSERT_USER,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column INSERT_USER.
+OTM.LOCATION,IS_ADDRESS_VALID,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column IS_ADDRESS_VALID.
+OTM.LOCATION,IS_FIXED_ADDRESS,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column IS_FIXED_ADDRESS.
+OTM.LOCATION,IS_LTL_SPLITABLE,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column IS_LTL_SPLITABLE.
+OTM.LOCATION,IS_MAKE_APPT_BEFORE_PLAN,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column IS_MAKE_APPT_BEFORE_PLAN.
+OTM.LOCATION,IS_SHIPPER_KNOWN,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column IS_SHIPPER_KNOWN.
+OTM.LOCATION,IS_TEMPLATE,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column IS_TEMPLATE.
+OTM.LOCATION,IS_TEMPORARY,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column IS_TEMPORARY.
+OTM.LOCATION,LAT,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column LAT.
+OTM.LOCATION,LOCATION_GID,,,nvarchar,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.LOCATION,LOCATION_GROUP_GID,,,nvarchar,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.LOCATION,LOCATION_NAME,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column LOCATION_NAME.
+OTM.LOCATION,LOCATION_XID,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column LOCATION_XID.
+OTM.LOCATION,LON,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column LON.
+OTM.LOCATION,MTBI_BUSINESS_UNIT,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column MTBI_BUSINESS_UNIT.
+OTM.LOCATION,NUM_OF_ROWS_IN_YARD,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column NUM_OF_ROWS_IN_YARD.
+OTM.LOCATION,NUM_OF_SLOTS_PER_ROW_IN_YARD,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column NUM_OF_SLOTS_PER_ROW_IN_YARD.
+OTM.LOCATION,PICKUP_ROUTING_SEQUENCE_GID,,,nvarchar,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.LOCATION,POSTAL_CODE,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column POSTAL_CODE.
+OTM.LOCATION,POSTAL_SPLC_GID,,,nvarchar,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.LOCATION,PRIMARY_ADDRESS_LINE_SEQ,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column PRIMARY_ADDRESS_LINE_SEQ.
+OTM.LOCATION,PROVINCE,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column PROVINCE.
+OTM.LOCATION,PROVINCE_CODE,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column PROVINCE_CODE.
+OTM.LOCATION,RAIL_JUNCTION_CODE_GID,,,nvarchar,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.LOCATION,RAIL_SPLC_GID,,,nvarchar,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.LOCATION,RAIL_STATION_CODE_GID,,,nvarchar,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.LOCATION,RATE_CLASSIFICATION_GID,,,nvarchar,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.LOCATION,REGION_GID,REGION_DETAIL,REGION_GID,nvarchar,Stores all location master data used across shipments and orders.,References REGION_DETAIL table using column REGION_GID.
+OTM.LOCATION,SCHEDULE_INFEASIBLE_APPOINT,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column SCHEDULE_INFEASIBLE_APPOINT.
+OTM.LOCATION,SCHEDULE_LOW_PRIORITY_APPOINT,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column SCHEDULE_LOW_PRIORITY_APPOINT.
+OTM.LOCATION,SERVING_SERVPROV_PROFILE_GID,,,nvarchar,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.LOCATION,SERVPROV_PROFILE_GID,,,nvarchar,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.LOCATION,SLOT_TIME_INTERVAL,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column SLOT_TIME_INTERVAL.
+OTM.LOCATION,SLOT_TIME_INTERVAL_BASE,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column SLOT_TIME_INTERVAL_BASE.
+OTM.LOCATION,SLOT_TIME_INTERVAL_UOM_CODE,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column SLOT_TIME_INTERVAL_UOM_CODE.
+OTM.LOCATION,SOURCING_GROUP_NAME,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column SOURCING_GROUP_NAME.
+OTM.LOCATION,STANDING_APPT_CUTOFF_WINDOW,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column STANDING_APPT_CUTOFF_WINDOW.
+OTM.LOCATION,TIME_ZONE_GID,,,nvarchar,Stores all location master data used across shipments and orders.,Unique identifier used to link records.
+OTM.LOCATION,UPDATE_DATE,,,nvarchar,Stores all location master data used across shipments and orders.,Date or timestamp associated with the transaction or event.
+OTM.LOCATION,UPDATE_USER,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column UPDATE_USER.
+OTM.LOCATION,USE_APPOINTMENT_PRIORITY,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column USE_APPOINTMENT_PRIORITY.
+OTM.LOCATION,YARD_ROW_LABELS,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column YARD_ROW_LABELS.
+OTM.LOCATION,YARD_SLOT_LABELS,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column YARD_SLOT_LABELS.
+OTM.LOCATION,ZONE1,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ZONE1.
+OTM.LOCATION,ZONE2,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ZONE2.
+OTM.LOCATION,ZONE3,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ZONE3.
+OTM.LOCATION,ZONE4,,,nvarchar,Stores all location master data used across shipments and orders.,Business-specific data stored in column ZONE4.
+OTM.SHIPMENT,AIR_RAIL_ROUTE_CODE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column AIR_RAIL_ROUTE_CODE.
+OTM.SHIPMENT,APPOINTMENT_PRIORITY_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,ATTRIBUTE_CURRENCY1,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_CURRENCY1_BASE,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_CURRENCY1_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,ATTRIBUTE_CURRENCY2,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_CURRENCY2_BASE,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_CURRENCY2_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,ATTRIBUTE_CURRENCY3,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_CURRENCY3_BASE,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_CURRENCY3_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,ATTRIBUTE_DATE1,,,datetime2,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_DATE10,,,datetime2,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_DATE2,,,datetime2,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_DATE3,,,datetime2,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_DATE4,,,datetime2,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_DATE5,,,datetime2,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_DATE6,,,datetime2,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_DATE7,,,datetime2,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_DATE8,,,datetime2,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_DATE9,,,datetime2,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_NUMBER1,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_NUMBER10,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_NUMBER2,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_NUMBER3,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_NUMBER4,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_NUMBER5,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_NUMBER6,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_NUMBER7,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_NUMBER8,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE_NUMBER9,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT,ATTRIBUTE1,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE1.
+OTM.SHIPMENT,ATTRIBUTE10,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE10.
+OTM.SHIPMENT,ATTRIBUTE11,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE11.
+OTM.SHIPMENT,ATTRIBUTE12,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE12.
+OTM.SHIPMENT,ATTRIBUTE13,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE13.
+OTM.SHIPMENT,ATTRIBUTE14,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE14.
+OTM.SHIPMENT,ATTRIBUTE15,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE15.
+OTM.SHIPMENT,ATTRIBUTE16,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE16.
+OTM.SHIPMENT,ATTRIBUTE17,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE17.
+OTM.SHIPMENT,ATTRIBUTE18,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE18.
+OTM.SHIPMENT,ATTRIBUTE19,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE19.
+OTM.SHIPMENT,ATTRIBUTE2,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE2.
+OTM.SHIPMENT,ATTRIBUTE20,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE20.
+OTM.SHIPMENT,ATTRIBUTE3,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE3.
+OTM.SHIPMENT,ATTRIBUTE4,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE4.
+OTM.SHIPMENT,ATTRIBUTE5,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE5.
+OTM.SHIPMENT,ATTRIBUTE6,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE6.
+OTM.SHIPMENT,ATTRIBUTE7,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE7.
+OTM.SHIPMENT,ATTRIBUTE8,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE8.
+OTM.SHIPMENT,ATTRIBUTE9,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE9.
+OTM.SHIPMENT,BOL_ISSUANCE_TYPE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column BOL_ISSUANCE_TYPE.
+OTM.SHIPMENT,BOL_TYPE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column BOL_TYPE.
+OTM.SHIPMENT,BULK_CM_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,BULK_PLAN_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,CHARGEABLE_VOLUME,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column CHARGEABLE_VOLUME.
+OTM.SHIPMENT,CHARGEABLE_VOLUME_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column CHARGEABLE_VOLUME_BASE.
+OTM.SHIPMENT,CHARGEABLE_VOLUME_UOM_CODE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column CHARGEABLE_VOLUME_UOM_CODE.
+OTM.SHIPMENT,CHARGEABLE_WEIGHT,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column CHARGEABLE_WEIGHT.
+OTM.SHIPMENT,CHARGEABLE_WEIGHT_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column CHARGEABLE_WEIGHT_BASE.
+OTM.SHIPMENT,CHARGEABLE_WEIGHT_UOM_CODE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column CHARGEABLE_WEIGHT_UOM_CODE.
+OTM.SHIPMENT,CHECK_CAPACITY_CONSTRAINT,,,nchar,Contains all shipment records and their logistical details.,Business-specific data stored in column CHECK_CAPACITY_CONSTRAINT.
+OTM.SHIPMENT,CHECK_COST_CONSTRAINT,,,nchar,Contains all shipment records and their logistical details.,Business-specific data stored in column CHECK_COST_CONSTRAINT.
+OTM.SHIPMENT,CHECK_TIME_CONSTRAINT,,,nchar,Contains all shipment records and their logistical details.,Business-specific data stored in column CHECK_TIME_CONSTRAINT.
+OTM.SHIPMENT,CM_COST,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column CM_COST.
+OTM.SHIPMENT,CM_COST_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column CM_COST_BASE.
+OTM.SHIPMENT,CM_COST_CURRENCY_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,CM_COST_FN,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column CM_COST_FN.
+OTM.SHIPMENT,CM_COST_FN_CURRENCY_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,CM_EMPTY_DISTANCE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column CM_EMPTY_DISTANCE.
+OTM.SHIPMENT,CM_EMPTY_DISTANCE_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column CM_EMPTY_DISTANCE_BASE.
+OTM.SHIPMENT,CM_EMPTY_DISTANCE_UOM_CODE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column CM_EMPTY_DISTANCE_UOM_CODE.
+OTM.SHIPMENT,CM_NAME,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column CM_NAME.
+OTM.SHIPMENT,CM_NEXT_SOURCE_LOCATION_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,CM_PREV_DEST_LOCATION_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,CM_SEQUENCE_NUM,,,numeric,Contains all shipment records and their logistical details.,Business-specific data stored in column CM_SEQUENCE_NUM.
+OTM.SHIPMENT,COFC_TOFC,,,nchar,Contains all shipment records and their logistical details.,Business-specific data stored in column COFC_TOFC.
+OTM.SHIPMENT,CONSOL_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,CONTACT_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,CONTAINER_DELIVERY_LOC_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,CONTAINER_PICKUP_LOC_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,CURRENCY_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,CURRENT_STOP_NUM,,,numeric,Contains all shipment records and their logistical details.,Business-specific data stored in column CURRENT_STOP_NUM.
+OTM.SHIPMENT,CUSTOMER_RATE_CODE,,,nchar,Contains all shipment records and their logistical details.,Business-specific data stored in column CUSTOMER_RATE_CODE.
+OTM.SHIPMENT,DELIVERING_SERVPROV_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,DEST_LOCATION_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,DEST_LOCATION_OVERRIDE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,DEST_PIER_LOCATION_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,DIM_VOLUME,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column DIM_VOLUME.
+OTM.SHIPMENT,DIM_VOLUME_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column DIM_VOLUME_BASE.
+OTM.SHIPMENT,DIM_VOLUME_UOM_CODE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column DIM_VOLUME_UOM_CODE.
+OTM.SHIPMENT,DIM_WEIGHT,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column DIM_WEIGHT.
+OTM.SHIPMENT,DIM_WEIGHT_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column DIM_WEIGHT_BASE.
+OTM.SHIPMENT,DIM_WEIGHT_UOM_CODE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column DIM_WEIGHT_UOM_CODE.
+OTM.SHIPMENT,DOMAIN_NAME,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column DOMAIN_NAME.
+OTM.SHIPMENT,DRIVER_ASSIGN_BULK_PLAN_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,DRIVER_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,DROP_INVENTORY_PROCESSED,,,nvarchar,Contains all shipment records and their logistical details.,Boolean indicator — true if condition is met.
+OTM.SHIPMENT,DUTY_PAID,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column DUTY_PAID.
+OTM.SHIPMENT,EARLIEST_START_TIME,,,datetime2,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT,EM_PHONE_NUMBER,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column EM_PHONE_NUMBER.
+OTM.SHIPMENT,END_TIME,,,datetime2,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT,EQUIP_REF_UNIT_UTILIZATION,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column EQUIP_REF_UNIT_UTILIZATION.
+OTM.SHIPMENT,EQUIPMENT_ASSIGN_BULK_PLAN_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,EQUIPMENT_REFERENCE_UNIT_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,EXCHANGE_RATE_DATE,,,datetime2,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT,EXCHANGE_RATE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,FEASIBILITY_CODE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,FIRST_EQUIPMENT_GROUP_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,FIXED_SERVICE_DAYS,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column FIXED_SERVICE_DAYS.
+OTM.SHIPMENT,FLIGHT_INSTANCE_ID,,,float,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,FREIGHT_TERMS,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column FREIGHT_TERMS.
+OTM.SHIPMENT,HAS_APPOINTMENTS,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column HAS_APPOINTMENTS.
+OTM.SHIPMENT,HAZMAT_MODE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,HAZMAT_REGION_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,IN_TRAILER_BUILD,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IN_TRAILER_BUILD.
+OTM.SHIPMENT,INCO_TERM_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,INDICATOR,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column INDICATOR.
+OTM.SHIPMENT,INSERT_DATE,,,datetime2,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT,INSERT_USER,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column INSERT_USER.
+OTM.SHIPMENT,INSURANCE_AMOUNT,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column INSURANCE_AMOUNT.
+OTM.SHIPMENT,INSURANCE_AMOUNT_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column INSURANCE_AMOUNT_BASE.
+OTM.SHIPMENT,INSURANCE_AMOUNT_CURRENCY_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,INSURANCE_AMT_FN,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column INSURANCE_AMT_FN.
+OTM.SHIPMENT,INSURANCE_AMT_FN_CURRENCY_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,INSURANCE_POLICY_NUMBER,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column INSURANCE_POLICY_NUMBER.
+OTM.SHIPMENT,INSURANCE_PREM_FN,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column INSURANCE_PREM_FN.
+OTM.SHIPMENT,INSURANCE_PREM_FN_CURRENCY_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,INSURANCE_PREMIUM,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column INSURANCE_PREMIUM.
+OTM.SHIPMENT,INSURANCE_PREMIUM_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column INSURANCE_PREMIUM_BASE.
+OTM.SHIPMENT,INSURANCE_PREMIUM_CURRENCY_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,INTERMEDIARY_CORPORATION_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,IS_ADVANCED_CHARGE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_ADVANCED_CHARGE.
+OTM.SHIPMENT,IS_AUTO_MERGE_CONSOLIDATE,,,nchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_AUTO_MERGE_CONSOLIDATE.
+OTM.SHIPMENT,IS_COST_FIXED,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_COST_FIXED.
+OTM.SHIPMENT,IS_CPCTY_OVERRIDE_APPLICABLE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_CPCTY_OVERRIDE_APPLICABLE.
+OTM.SHIPMENT,IS_CREDIT_NOTE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_CREDIT_NOTE.
+OTM.SHIPMENT,IS_EQUIPMENT_FIXED,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_EQUIPMENT_FIXED.
+OTM.SHIPMENT,IS_FIXED_DISTANCE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_FIXED_DISTANCE.
+OTM.SHIPMENT,IS_FIXED_TENDER_CONTACT,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_FIXED_TENDER_CONTACT.
+OTM.SHIPMENT,IS_HAZARDOUS,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_HAZARDOUS.
+OTM.SHIPMENT,IS_MEMO_BL,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_MEMO_BL.
+OTM.SHIPMENT,IS_PERMANENT,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_PERMANENT.
+OTM.SHIPMENT,IS_PREFERRED_CARRIER,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_PREFERRED_CARRIER.
+OTM.SHIPMENT,IS_PRELOAD,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_PRELOAD.
+OTM.SHIPMENT,IS_PRIMARY,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_PRIMARY.
+OTM.SHIPMENT,IS_PROFIT_SPLIT,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_PROFIT_SPLIT.
+OTM.SHIPMENT,IS_RATE_GEO_FIXED,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_RATE_GEO_FIXED.
+OTM.SHIPMENT,IS_RATE_OFFERING_FIXED,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_RATE_OFFERING_FIXED.
+OTM.SHIPMENT,IS_RECALC_TOTALS,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_RECALC_TOTALS.
+OTM.SHIPMENT,IS_SERVICE_TIME_FIXED,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_SERVICE_TIME_FIXED.
+OTM.SHIPMENT,IS_SERVPROV_FIXED,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_SERVPROV_FIXED.
+OTM.SHIPMENT,IS_SPOT_COSTED,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_SPOT_COSTED.
+OTM.SHIPMENT,IS_TEMPERATURE_CONTROL,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_TEMPERATURE_CONTROL.
+OTM.SHIPMENT,IS_TEMPLATE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_TEMPLATE.
+OTM.SHIPMENT,IS_TO_BE_HELD,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_TO_BE_HELD.
+OTM.SHIPMENT,ITINERARY_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,JOB_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,LAST_EVENT_GROUP_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,LATEST_START_TIME,,,datetime2,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT,LOAD_CONFIG_ENGINE_TYPE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,LOADED_DISTANCE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column LOADED_DISTANCE.
+OTM.SHIPMENT,LOADED_DISTANCE_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column LOADED_DISTANCE_BASE.
+OTM.SHIPMENT,LOADED_DISTANCE_UOM_CODE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column LOADED_DISTANCE_UOM_CODE.
+OTM.SHIPMENT,MARKED_FOR_PURGE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column MARKED_FOR_PURGE.
+OTM.SHIPMENT,MTBI_BUSINESS_UNIT,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_BUSINESS_UNIT.
+OTM.SHIPMENT,MTBI_ENDDATETIME,,,datetime2,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_ENDDATETIME.
+OTM.SHIPMENT,MTBI_ENDTIME,,,time,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_ENDTIME.
+OTM.SHIPMENT,MTBI_LOCALENDDATE,,,date,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_LOCALENDDATE.
+OTM.SHIPMENT,MTBI_LOCALENDDATETIME,,,datetime2,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_LOCALENDDATETIME.
+OTM.SHIPMENT,MTBI_LOCALENDTIME,,,time,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_LOCALENDTIME.
+OTM.SHIPMENT,MTBI_LOCALINSERTDATETIME,,,datetime2,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_LOCALINSERTDATETIME.
+OTM.SHIPMENT,MTBI_LOCALSTARTDATE,,,date,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_LOCALSTARTDATE.
+OTM.SHIPMENT,MTBI_LOCALSTARTDATETIME,,,datetime2,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_LOCALSTARTDATETIME.
+OTM.SHIPMENT,MTBI_LOCALSTARTTIME,,,time,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_LOCALSTARTTIME.
+OTM.SHIPMENT,MTBI_LOCALUPDATEDATETIME,,,datetime,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_LOCALUPDATEDATETIME.
+OTM.SHIPMENT,NFRC_RULE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,NUM_EQUIPMENT_ORDERED,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column NUM_EQUIPMENT_ORDERED.
+OTM.SHIPMENT,NUM_ORDER_RELEASES,,,numeric,Contains all shipment records and their logistical details.,Business-specific data stored in column NUM_ORDER_RELEASES.
+OTM.SHIPMENT,NUM_STOPS,,,numeric,Contains all shipment records and their logistical details.,Business-specific data stored in column NUM_STOPS.
+OTM.SHIPMENT,ORIGINAL_INV_C_FN,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column ORIGINAL_INV_C_FN.
+OTM.SHIPMENT,ORIGINAL_INV_C_FN_CURRENCY_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,ORIGINAL_INVOICE_COST,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column ORIGINAL_INVOICE_COST.
+OTM.SHIPMENT,ORIGINAL_INVOICE_COST_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column ORIGINAL_INVOICE_COST_BASE.
+OTM.SHIPMENT,ORIGINAL_INVOICE_COST_CURR_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,ORIGINAL_SHIPMENT_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,ORIGINATING_SERVPROV_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,PARCEL_ZONE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column PARCEL_ZONE.
+OTM.SHIPMENT,PARENT_LEG_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,PAYMENT_METHOD_CODE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,PAYMENT_METHOD_CODE_GID,PAYMENT_METHOD_CODE,PAYMENT_METHOD_CODE_GID,nvarchar,Contains all shipment records and their logistical details.,References PAYMENT_METHOD_CODE table using column PAYMENT_METHOD_CODE_GID.
+OTM.SHIPMENT,PERSPECTIVE,,,nchar,Contains all shipment records and their logistical details.,Business-specific data stored in column PERSPECTIVE.
+OTM.SHIPMENT,PICK_INVENTORY_PROCESSED,,,nvarchar,Contains all shipment records and their logistical details.,Boolean indicator — true if condition is met.
+OTM.SHIPMENT,PLACE_DELIVER_LOCATION_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,PLACE_RECEIPT_LOCATION_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,PLANNED_COST,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column PLANNED_COST.
+OTM.SHIPMENT,PLANNED_COST_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column PLANNED_COST_BASE.
+OTM.SHIPMENT,PLANNED_COST_CURRENCY_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,PLANNED_COST_FN,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column PLANNED_COST_FN.
+OTM.SHIPMENT,PLANNED_COST_FN_CURRENCY_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,PLANNED_RATE_GEO_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,PLANNED_RATE_OFFERING_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,PLANNED_SERVPROV_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,PLANNED_TRANSPORT_MODE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,PLANNING_PARAMETER_SET_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,PORT_DISCHARGE_ETA,,,datetime2,Contains all shipment records and their logistical details.,Business-specific data stored in column PORT_DISCHARGE_ETA.
+OTM.SHIPMENT,PORT_EXIT_LOC_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,PORT_OF_DIS_LOCATION_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,PORT_OF_DIS_OVERRIDE_LOC_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,PORT_OF_EXIT_DATE,,,datetime2,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT,PORT_OF_LOAD_LOCATION_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,PORT_OF_LOAD_OVERRIDE_LOC_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,POWER_UNIT_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,PREV_DROP_INVENTORY_PROCESSED,,,nvarchar,Contains all shipment records and their logistical details.,Boolean indicator — true if condition is met.
+OTM.SHIPMENT,PREV_SIGHTING_DATE,,,datetime2,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT,PREV_SIGHTING_LOCATION_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,PRIMARY_ORDER_BASE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,PROCESSING_CODE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,RAIL_DATE,,,datetime2,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT,RAIL_INTER_MODAL_PLAN_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,RAIL_RETURN_LOCATION_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,RAIL_RETURN_ROUTE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,RATE_GEO_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,RATE_GEO_GID,RATE_GEO,RATE_GEO_GID,nvarchar,Contains all shipment records and their logistical details.,References RATE_GEO table using column RATE_GEO_GID.
+OTM.SHIPMENT,RATE_GEO_GID,RATE_GEO_ACCESSORIAL,RATE_GEO_GID,nvarchar,Contains all shipment records and their logistical details.,References RATE_GEO_ACCESSORIAL table using column RATE_GEO_GID.
+OTM.SHIPMENT,RATE_GEO_GID,RATE_GEO_REFNUM,RATE_GEO_GID,nvarchar,Contains all shipment records and their logistical details.,References RATE_GEO_REFNUM table using column RATE_GEO_GID.
+OTM.SHIPMENT,RATE_OFFERING_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,RATE_OFFERING_GID,P_PROJECT_RATE_OFFERING,RATE_OFFERING_GID,nvarchar,Contains all shipment records and their logistical details.,References P_PROJECT_RATE_OFFERING table using column RATE_OFFERING_GID.
+OTM.SHIPMENT,RATE_OFFERING_GID,RATE_OFFERING,RATE_OFFERING_GID,nvarchar,Contains all shipment records and their logistical details.,References RATE_OFFERING table using column RATE_OFFERING_GID.
+OTM.SHIPMENT,RATE_OFFERING_GID,RATE_OFFERING_ACCESSORIAL,RATE_OFFERING_GID,nvarchar,Contains all shipment records and their logistical details.,References RATE_OFFERING_ACCESSORIAL table using column RATE_OFFERING_GID.
+OTM.SHIPMENT,RATE_OFFERING_GID,RATE_PREFERENCE_DETAIL,RATE_OFFERING_GID,nvarchar,Contains all shipment records and their logistical details.,References RATE_PREFERENCE_DETAIL table using column RATE_OFFERING_GID.
+OTM.SHIPMENT,RATE_OFFERING_GID,RO_SPECIAL_SERVICE,RATE_OFFERING_GID,nvarchar,Contains all shipment records and their logistical details.,References RO_SPECIAL_SERVICE table using column RATE_OFFERING_GID.
+OTM.SHIPMENT,REPETITION_SCHEDULE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,ROUTE_CODE_COMBINATION_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,RULE_11_INDICATOR,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column RULE_11_INDICATOR.
+OTM.SHIPMENT,RULE_7,,,nchar,Contains all shipment records and their logistical details.,Business-specific data stored in column RULE_7.
+OTM.SHIPMENT,SAIL_CUTOFF_DATE,,,datetime2,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT,SAIL_DATE,,,datetime2,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT,SCHEDULE_TYPE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column SCHEDULE_TYPE.
+OTM.SHIPMENT,SECONDARY_CHARGE_RULE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,SECONDARY_DRIVER_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,SERVPROV_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,SERVPROV_GID,SERVPROV,SERVPROV_GID,nvarchar,Contains all shipment records and their logistical details.,References SERVPROV table using column SERVPROV_GID.
+OTM.SHIPMENT,SERVPROV_GID,SERVPROV_ALIAS,SERVPROV_GID,nvarchar,Contains all shipment records and their logistical details.,References SERVPROV_ALIAS table using column SERVPROV_GID.
+OTM.SHIPMENT,SERVPROV_GID,SERVPROV_POLICY,SERVPROV_GID,nvarchar,Contains all shipment records and their logistical details.,References SERVPROV_POLICY table using column SERVPROV_GID.
+OTM.SHIPMENT,SERVPROV_GID,TENDER_COLLAB_SERVPROV,SERVPROV_GID,nvarchar,Contains all shipment records and their logistical details.,References TENDER_COLLAB_SERVPROV table using column SERVPROV_GID.
+OTM.SHIPMENT,SHIPMENT_AS_WORK,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column SHIPMENT_AS_WORK.
+OTM.SHIPMENT,SHIPMENT_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,SHIPMENT_GID,SHIPMENT_ACCESSORIAL,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_ACCESSORIAL table using column SHIPMENT_GID.
+OTM.SHIPMENT,SHIPMENT_GID,SHIPMENT_BILL,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_BILL table using column SHIPMENT_GID.
+OTM.SHIPMENT,SHIPMENT_GID,SHIPMENT_INF_COST,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_INF_COST table using column SHIPMENT_GID.
+OTM.SHIPMENT,SHIPMENT_GID,SHIPMENT_INF_COST_D,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_INF_COST_D table using column SHIPMENT_GID.
+OTM.SHIPMENT,SHIPMENT_GID,SHIPMENT_INVOLVED_PARTY,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_INVOLVED_PARTY table using column SHIPMENT_GID.
+OTM.SHIPMENT,SHIPMENT_GID,SHIPMENT_ORDER_RELEASE_JOIN,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_ORDER_RELEASE_JOIN table using column SHIPMENT_GID.
+OTM.SHIPMENT,SHIPMENT_GID,SHIPMENT_REFNUM,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_REFNUM table using column SHIPMENT_GID.
+OTM.SHIPMENT,SHIPMENT_GID,SHIPMENT_REMARK,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_REMARK table using column SHIPMENT_GID.
+OTM.SHIPMENT,SHIPMENT_GID,SHIPMENT_S_EQUIPMENT_JOIN,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_S_EQUIPMENT_JOIN table using column SHIPMENT_GID.
+OTM.SHIPMENT,SHIPMENT_GID,SHIPMENT_SPECIAL_SERVICE,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_SPECIAL_SERVICE table using column SHIPMENT_GID.
+OTM.SHIPMENT,SHIPMENT_GID,SHIPMENT_STATUS,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_STATUS table using column SHIPMENT_GID.
+OTM.SHIPMENT,SHIPMENT_GID,SHIPMENT_STOP,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_STOP table using column SHIPMENT_GID.
+OTM.SHIPMENT,SHIPMENT_GID,SHIPMENT_STOP_D,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_STOP_D table using column SHIPMENT_GID.
+OTM.SHIPMENT,SHIPMENT_GID,SHIPMENT_STOP_REFNUM,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_STOP_REFNUM table using column SHIPMENT_GID.
+OTM.SHIPMENT,SHIPMENT_GID,SS_EQUIPMENT_STATUS_HISTORY,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SS_EQUIPMENT_STATUS_HISTORY table using column SHIPMENT_GID.
+OTM.SHIPMENT,SHIPMENT_GID,SS_STATUS_HISTORY,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SS_STATUS_HISTORY table using column SHIPMENT_GID.
+OTM.SHIPMENT,SHIPMENT_GROUP_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,SHIPMENT_NAME,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column SHIPMENT_NAME.
+OTM.SHIPMENT,SHIPMENT_RELEASED,,,nchar,Contains all shipment records and their logistical details.,Business-specific data stored in column SHIPMENT_RELEASED.
+OTM.SHIPMENT,SHIPMENT_TYPE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,SHIPMENT_TYPE_GID,SHIPMENT_TYPE,SHIPMENT_TYPE_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_TYPE table using column SHIPMENT_TYPE_GID.
+OTM.SHIPMENT,SHIPMENT_XID,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column SHIPMENT_XID.
+OTM.SHIPMENT,SHIPPING_AGENT_CONTACT_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,SIGHTING_DATE,,,datetime2,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT,SIGHTING_LOCATION_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,SOURCE_LOCATION_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,SOURCE_LOCATION_OVERRIDE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,SOURCE_PIER_LOCATION_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,START_TIME,,,datetime2,Contains all shipment records and their logistical details.,The primary operational date and time when the shipment actually started its transit or main leg of the journey. Often used for reporting and analysis of shipment timelines such as distribution by year or month.
+OTM.SHIPMENT,T_ACTUAL_COST_CURRENCY_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,T_WEIGHTED_COST_CURRENCY_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,TARIFF_DATE,,,datetime2,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT,TARIFF_NAME,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column TARIFF_NAME.
+OTM.SHIPMENT,TARIFF_NUMBER,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column TARIFF_NUMBER.
+OTM.SHIPMENT,TARIFF_ORGANIZATION_NAME,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column TARIFF_ORGANIZATION_NAME.
+OTM.SHIPMENT,TARIFF_ORGANIZATION_NUMBER,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column TARIFF_ORGANIZATION_NUMBER.
+OTM.SHIPMENT,TERM_LOCATION_TEXT,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column TERM_LOCATION_TEXT.
+OTM.SHIPMENT,TOT_MATCH_INV_FN,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOT_MATCH_INV_FN.
+OTM.SHIPMENT,TOT_MATCH_INV_FN_CURRENCY_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,TOT_MATCHED_INV_COST_CURR_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,TOT_MATCHED_INVOICE_COST,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOT_MATCHED_INVOICE_COST.
+OTM.SHIPMENT,TOT_MATCHED_INVOICE_COST_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOT_MATCHED_INVOICE_COST_BASE.
+OTM.SHIPMENT,TOTAL_ACTUAL_C_FN,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_ACTUAL_C_FN.
+OTM.SHIPMENT,TOTAL_ACTUAL_C_FN_CURRENCY_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,TOTAL_ACTUAL_COST,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_ACTUAL_COST.
+OTM.SHIPMENT,TOTAL_ACTUAL_COST_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_ACTUAL_COST_BASE.
+OTM.SHIPMENT,TOTAL_APP_COST_FN,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_APP_COST_FN.
+OTM.SHIPMENT,TOTAL_APP_COST_FN_CURRENCY_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,TOTAL_APPROVED_COST,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_APPROVED_COST.
+OTM.SHIPMENT,TOTAL_APPROVED_COST_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_APPROVED_COST_BASE.
+OTM.SHIPMENT,TOTAL_APPROVED_COST_CURR_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,TOTAL_DECLARED_VALUE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_DECLARED_VALUE.
+OTM.SHIPMENT,TOTAL_DECLARED_VALUE_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_DECLARED_VALUE_BASE.
+OTM.SHIPMENT,TOTAL_DECLARED_VALUE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,TOTAL_ITEM_PACKAGE_COUNT,,,numeric,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_ITEM_PACKAGE_COUNT.
+OTM.SHIPMENT,TOTAL_NET_VOLUME,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_NET_VOLUME.
+OTM.SHIPMENT,TOTAL_NET_VOLUME_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_NET_VOLUME_BASE.
+OTM.SHIPMENT,TOTAL_NET_VOLUME_UOM_CODE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_NET_VOLUME_UOM_CODE.
+OTM.SHIPMENT,TOTAL_NET_WEIGHT,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_NET_WEIGHT.
+OTM.SHIPMENT,TOTAL_NET_WEIGHT_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_NET_WEIGHT_BASE.
+OTM.SHIPMENT,TOTAL_NET_WEIGHT_UOM_CODE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_NET_WEIGHT_UOM_CODE.
+OTM.SHIPMENT,TOTAL_NUM_REFERENCE_UNITS,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_NUM_REFERENCE_UNITS.
+OTM.SHIPMENT,TOTAL_PACKAGING_UNIT_COUNT,,,numeric,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_PACKAGING_UNIT_COUNT.
+OTM.SHIPMENT,TOTAL_SHIP_UNIT_COUNT,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_SHIP_UNIT_COUNT.
+OTM.SHIPMENT,TOTAL_TRANS_C_FN,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_TRANS_C_FN.
+OTM.SHIPMENT,TOTAL_TRANS_C_FN_CURRENCY_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,TOTAL_TRANS_COST,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_TRANS_COST.
+OTM.SHIPMENT,TOTAL_TRANS_COST_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_TRANS_COST_BASE.
+OTM.SHIPMENT,TOTAL_TRANS_COST_CURRENCY_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,TOTAL_VOLUME,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_VOLUME.
+OTM.SHIPMENT,TOTAL_VOLUME_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_VOLUME_BASE.
+OTM.SHIPMENT,TOTAL_VOLUME_UOM_CODE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_VOLUME_UOM_CODE.
+OTM.SHIPMENT,TOTAL_WEIGHT,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_WEIGHT.
+OTM.SHIPMENT,TOTAL_WEIGHT_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_WEIGHT_BASE.
+OTM.SHIPMENT,TOTAL_WEIGHT_UOM_CODE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_WEIGHT_UOM_CODE.
+OTM.SHIPMENT,TOTAL_WEIGHTED_COST,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_WEIGHTED_COST.
+OTM.SHIPMENT,TOTAL_WEIGHTED_COST_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_WEIGHTED_COST_BASE.
+OTM.SHIPMENT,TOTAL_WT_COST_FN,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column TOTAL_WT_COST_FN.
+OTM.SHIPMENT,TOTAL_WT_COST_FN_CURRENCY_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,TRANSPORT_MODE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,TRANSPORT_MODE_GID,TRANSPORT_MODE,TRANSPORT_MODE_GID,nvarchar,Contains all shipment records and their logistical details.,References TRANSPORT_MODE table using column TRANSPORT_MODE_GID.
+OTM.SHIPMENT,UNLOADED_DISTANCE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column UNLOADED_DISTANCE.
+OTM.SHIPMENT,UNLOADED_DISTANCE_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column UNLOADED_DISTANCE_BASE.
+OTM.SHIPMENT,UNLOADED_DISTANCE_UOM_CODE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column UNLOADED_DISTANCE_UOM_CODE.
+OTM.SHIPMENT,UPDATE_DATE,,,datetime2,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT,UPDATE_USER,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column UPDATE_USER.
+OTM.SHIPMENT,USER_DEFINED1_ICON_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,USER_DEFINED2_ICON_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,USER_DEFINED3_ICON_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,USER_DEFINED4_ICON_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,USER_DEFINED5_ICON_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,VESSEL_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,VOLUME_UTILIZATION,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column VOLUME_UTILIZATION.
+OTM.SHIPMENT,VOYAGE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT,WEIGH_CODE,,,nchar,Contains all shipment records and their logistical details.,Business-specific data stored in column WEIGH_CODE.
+OTM.SHIPMENT,WEIGHT_UTILIZATION,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column WEIGHT_UTILIZATION.
+OTM.SHIPMENT_STOP,ACCESSORIAL_TIME,,,float,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT_STOP,ACCESSORIAL_TIME_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column ACCESSORIAL_TIME_BASE.
+OTM.SHIPMENT_STOP,ACCESSORIAL_TIME_UOM_CODE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ACCESSORIAL_TIME_UOM_CODE.
+OTM.SHIPMENT_STOP,ACTIVITY_TIME,,,float,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT_STOP,ACTIVITY_TIME_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column ACTIVITY_TIME_BASE.
+OTM.SHIPMENT_STOP,ACTIVITY_TIME_UOM_CODE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ACTIVITY_TIME_UOM_CODE.
+OTM.SHIPMENT_STOP,ACTUAL_ARRIVAL,,,datetime2,Contains all shipment records and their logistical details.,Business-specific data stored in column ACTUAL_ARRIVAL.
+OTM.SHIPMENT_STOP,ACTUAL_DEPARTURE,,,datetime2,Contains all shipment records and their logistical details.,Business-specific data stored in column ACTUAL_DEPARTURE.
+OTM.SHIPMENT_STOP,APPOINTMENT_DELIVERY,,,datetime2,Contains all shipment records and their logistical details.,Business-specific data stored in column APPOINTMENT_DELIVERY.
+OTM.SHIPMENT_STOP,APPOINTMENT_PICKUP,,,datetime2,Contains all shipment records and their logistical details.,Business-specific data stored in column APPOINTMENT_PICKUP.
+OTM.SHIPMENT_STOP,APPOINTMENT_WINDOW_END,,,datetime,Contains all shipment records and their logistical details.,Business-specific data stored in column APPOINTMENT_WINDOW_END.
+OTM.SHIPMENT_STOP,APPOINTMENT_WINDOW_START,,,datetime,Contains all shipment records and their logistical details.,Business-specific data stored in column APPOINTMENT_WINDOW_START.
+OTM.SHIPMENT_STOP,ARBITRARY_TYPE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ARBITRARY_TYPE.
+OTM.SHIPMENT_STOP,ATTRIBUTE_DATE1,,,datetime2,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT_STOP,ATTRIBUTE_DATE10,,,datetime2,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT_STOP,ATTRIBUTE_DATE2,,,datetime2,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT_STOP,ATTRIBUTE_DATE3,,,datetime2,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT_STOP,ATTRIBUTE_DATE4,,,datetime2,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT_STOP,ATTRIBUTE_DATE5,,,datetime2,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT_STOP,ATTRIBUTE_DATE6,,,datetime2,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT_STOP,ATTRIBUTE_DATE7,,,datetime2,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT_STOP,ATTRIBUTE_DATE8,,,datetime2,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT_STOP,ATTRIBUTE_DATE9,,,datetime2,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT_STOP,ATTRIBUTE_NUMBER1,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT_STOP,ATTRIBUTE_NUMBER10,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT_STOP,ATTRIBUTE_NUMBER2,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT_STOP,ATTRIBUTE_NUMBER3,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT_STOP,ATTRIBUTE_NUMBER4,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT_STOP,ATTRIBUTE_NUMBER5,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT_STOP,ATTRIBUTE_NUMBER6,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT_STOP,ATTRIBUTE_NUMBER7,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT_STOP,ATTRIBUTE_NUMBER8,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT_STOP,ATTRIBUTE_NUMBER9,,,float,Contains all shipment records and their logistical details.,Generic attribute used for custom business data.
+OTM.SHIPMENT_STOP,ATTRIBUTE1,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE1.
+OTM.SHIPMENT_STOP,ATTRIBUTE10,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE10.
+OTM.SHIPMENT_STOP,ATTRIBUTE11,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE11.
+OTM.SHIPMENT_STOP,ATTRIBUTE12,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE12.
+OTM.SHIPMENT_STOP,ATTRIBUTE13,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE13.
+OTM.SHIPMENT_STOP,ATTRIBUTE14,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE14.
+OTM.SHIPMENT_STOP,ATTRIBUTE15,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE15.
+OTM.SHIPMENT_STOP,ATTRIBUTE16,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE16.
+OTM.SHIPMENT_STOP,ATTRIBUTE17,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE17.
+OTM.SHIPMENT_STOP,ATTRIBUTE18,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE18.
+OTM.SHIPMENT_STOP,ATTRIBUTE19,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE19.
+OTM.SHIPMENT_STOP,ATTRIBUTE2,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE2.
+OTM.SHIPMENT_STOP,ATTRIBUTE20,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE20.
+OTM.SHIPMENT_STOP,ATTRIBUTE3,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE3.
+OTM.SHIPMENT_STOP,ATTRIBUTE4,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE4.
+OTM.SHIPMENT_STOP,ATTRIBUTE5,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE5.
+OTM.SHIPMENT_STOP,ATTRIBUTE6,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE6.
+OTM.SHIPMENT_STOP,ATTRIBUTE7,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE7.
+OTM.SHIPMENT_STOP,ATTRIBUTE8,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE8.
+OTM.SHIPMENT_STOP,ATTRIBUTE9,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ATTRIBUTE9.
+OTM.SHIPMENT_STOP,DIST_FROM_PREV_STOP,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column DIST_FROM_PREV_STOP.
+OTM.SHIPMENT_STOP,DIST_FROM_PREV_STOP_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column DIST_FROM_PREV_STOP_BASE.
+OTM.SHIPMENT_STOP,DIST_FROM_PREV_STOP_UOM_CODE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column DIST_FROM_PREV_STOP_UOM_CODE.
+OTM.SHIPMENT_STOP,DISTANCE_TYPE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column DISTANCE_TYPE.
+OTM.SHIPMENT_STOP,DOMAIN_NAME,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column DOMAIN_NAME.
+OTM.SHIPMENT_STOP,DRIVE_TIME,,,float,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT_STOP,DRIVE_TIME_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column DRIVE_TIME_BASE.
+OTM.SHIPMENT_STOP,DRIVE_TIME_UOM_CODE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column DRIVE_TIME_UOM_CODE.
+OTM.SHIPMENT_STOP,DRIVER_NON_PAYABLE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column DRIVER_NON_PAYABLE.
+OTM.SHIPMENT_STOP,ESTIMATED_ARRIVAL,,,datetime2,Contains all shipment records and their logistical details.,Business-specific data stored in column ESTIMATED_ARRIVAL.
+OTM.SHIPMENT_STOP,ESTIMATED_DEPARTURE,,,datetime2,Contains all shipment records and their logistical details.,Business-specific data stored in column ESTIMATED_DEPARTURE.
+OTM.SHIPMENT_STOP,EXT_SEQ_NO,,,numeric,Contains all shipment records and their logistical details.,Business-specific data stored in column EXT_SEQ_NO.
+OTM.SHIPMENT_STOP,FLIGHT_INSTANCE_ID,,,float,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT_STOP,INSERT_DATE,,,datetime2,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT_STOP,INSERT_USER,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column INSERT_USER.
+OTM.SHIPMENT_STOP,IS_DEPOT,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_DEPOT.
+OTM.SHIPMENT_STOP,IS_FIXED_ARRIVAL,,,nchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_FIXED_ARRIVAL.
+OTM.SHIPMENT_STOP,IS_FIXED_DEPARTURE,,,nchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_FIXED_DEPARTURE.
+OTM.SHIPMENT_STOP,IS_FIXED_DISTANCE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_FIXED_DISTANCE.
+OTM.SHIPMENT_STOP,IS_MOTHER_VESSEL,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_MOTHER_VESSEL.
+OTM.SHIPMENT_STOP,IS_PERMANENT,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_PERMANENT.
+OTM.SHIPMENT_STOP,LOCATION_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT_STOP,LOCATION_OVERRIDE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT_STOP,LOCATION_ROLE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT_STOP,MTBI_ACTUALARRIVALDATELOCAL,,,date,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_ACTUALARRIVALDATELOCAL.
+OTM.SHIPMENT_STOP,MTBI_ACTUALARRIVALDATETIMELOCAL,,,datetime,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_ACTUALARRIVALDATETIMELOCAL.
+OTM.SHIPMENT_STOP,MTBI_ACTUALARRIVALTIMELOCAL,,,time,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_ACTUALARRIVALTIMELOCAL.
+OTM.SHIPMENT_STOP,MTBI_ACTUALDEPARTUREDATELOCAL,,,date,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_ACTUALDEPARTUREDATELOCAL.
+OTM.SHIPMENT_STOP,MTBI_ACTUALDEPARTUREDATETIMELOCAL,,,datetime,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_ACTUALDEPARTUREDATETIMELOCAL.
+OTM.SHIPMENT_STOP,MTBI_ACTUALDEPARTURETIMELOCAL,,,time,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_ACTUALDEPARTURETIMELOCAL.
+OTM.SHIPMENT_STOP,MTBI_APPOINTMENTDELIVERYDATETIMELOCAL,,,datetime,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_APPOINTMENTDELIVERYDATETIMELOCAL.
+OTM.SHIPMENT_STOP,MTBI_APPOINTMENTPICKUPDATETIMELOCAL,,,datetime,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_APPOINTMENTPICKUPDATETIMELOCAL.
+OTM.SHIPMENT_STOP,MTBI_BUSINESS_UNIT,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_BUSINESS_UNIT.
+OTM.SHIPMENT_STOP,MTBI_PLANNEDARRIVALDATELOCAL,,,date,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_PLANNEDARRIVALDATELOCAL.
+OTM.SHIPMENT_STOP,MTBI_PLANNEDARRIVALDATETIMELOCAL,,,datetime,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_PLANNEDARRIVALDATETIMELOCAL.
+OTM.SHIPMENT_STOP,MTBI_PLANNEDARRIVALTIMELOCAL,,,time,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_PLANNEDARRIVALTIMELOCAL.
+OTM.SHIPMENT_STOP,MTBI_PLANNEDDEPARTUREDATELOCAL,,,date,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_PLANNEDDEPARTUREDATELOCAL.
+OTM.SHIPMENT_STOP,MTBI_PLANNEDDEPARTUREDATETIMELOCAL,,,datetime,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_PLANNEDDEPARTUREDATETIMELOCAL.
+OTM.SHIPMENT_STOP,MTBI_PLANNEDDEPARTURETIMELOCAL,,,time,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_PLANNEDDEPARTURETIMELOCAL.
+OTM.SHIPMENT_STOP,PARENT_LOCATION_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT_STOP,PLANNED_ARRIVAL,,,datetime2,Contains all shipment records and their logistical details.,Business-specific data stored in column PLANNED_ARRIVAL.
+OTM.SHIPMENT_STOP,PLANNED_DEPARTURE,,,datetime2,Contains all shipment records and their logistical details.,Business-specific data stored in column PLANNED_DEPARTURE.
+OTM.SHIPMENT_STOP,RATE_SERVICE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT_STOP,RATE_SERVICE_GID,RATE_SERVICE,RATE_SERVICE_GID,nvarchar,Contains all shipment records and their logistical details.,References RATE_SERVICE table using column RATE_SERVICE_GID.
+OTM.SHIPMENT_STOP,RATE_SERVICE_GID,RATE_SERVICE_PROFILE_D,RATE_SERVICE_GID,nvarchar,Contains all shipment records and their logistical details.,References RATE_SERVICE_PROFILE_D table using column RATE_SERVICE_GID.
+OTM.SHIPMENT_STOP,RATE_SERVICE_GID,RATE_ZONE_SERVICE_TIME,RATE_SERVICE_GID,nvarchar,Contains all shipment records and their logistical details.,References RATE_ZONE_SERVICE_TIME table using column RATE_SERVICE_GID.
+OTM.SHIPMENT_STOP,REPETITION_SCHED_STOP_NUMBER,,,numeric,Contains all shipment records and their logistical details.,Business-specific data stored in column REPETITION_SCHED_STOP_NUMBER.
+OTM.SHIPMENT_STOP,REPETITION_SCHEDULE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT_STOP,REST_TIME,,,float,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT_STOP,REST_TIME_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column REST_TIME_BASE.
+OTM.SHIPMENT_STOP,REST_TIME_UOM_CODE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column REST_TIME_UOM_CODE.
+OTM.SHIPMENT_STOP,RUSH_HOUR_TIME,,,float,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT_STOP,RUSH_HOUR_TIME_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column RUSH_HOUR_TIME_BASE.
+OTM.SHIPMENT_STOP,RUSH_HOUR_TIME_UOM_CODE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column RUSH_HOUR_TIME_UOM_CODE.
+OTM.SHIPMENT_STOP,SHIPMENT_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT_STOP,SHIPMENT_GID,SHIPMENT,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP,SHIPMENT_GID,SHIPMENT_ACCESSORIAL,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_ACCESSORIAL table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP,SHIPMENT_GID,SHIPMENT_BILL,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_BILL table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP,SHIPMENT_GID,SHIPMENT_INF_COST,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_INF_COST table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP,SHIPMENT_GID,SHIPMENT_INF_COST_D,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_INF_COST_D table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP,SHIPMENT_GID,SHIPMENT_INVOLVED_PARTY,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_INVOLVED_PARTY table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP,SHIPMENT_GID,SHIPMENT_ORDER_RELEASE_JOIN,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_ORDER_RELEASE_JOIN table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP,SHIPMENT_GID,SHIPMENT_REFNUM,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_REFNUM table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP,SHIPMENT_GID,SHIPMENT_REMARK,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_REMARK table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP,SHIPMENT_GID,SHIPMENT_S_EQUIPMENT_JOIN,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_S_EQUIPMENT_JOIN table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP,SHIPMENT_GID,SHIPMENT_SPECIAL_SERVICE,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_SPECIAL_SERVICE table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP,SHIPMENT_GID,SHIPMENT_STATUS,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_STATUS table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP,SHIPMENT_GID,SHIPMENT_STOP_D,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_STOP_D table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP,SHIPMENT_GID,SHIPMENT_STOP_REFNUM,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_STOP_REFNUM table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP,SHIPMENT_GID,SS_EQUIPMENT_STATUS_HISTORY,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SS_EQUIPMENT_STATUS_HISTORY table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP,SHIPMENT_GID,SS_STATUS_HISTORY,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SS_STATUS_HISTORY table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP,SLACK_VARIANCE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column SLACK_VARIANCE.
+OTM.SHIPMENT_STOP,STOP_NUM,SHIPMENT_STOP_D,STOP_NUM,bigint,Contains all shipment records and their logistical details.,References SHIPMENT_STOP_D table using column STOP_NUM.
+OTM.SHIPMENT_STOP,STOP_NUM,SHIPMENT_STOP_REFNUM,STOP_NUM,bigint,Contains all shipment records and their logistical details.,References SHIPMENT_STOP_REFNUM table using column STOP_NUM.
+OTM.SHIPMENT_STOP,STOP_REQUIREMENT_TYPE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column STOP_REQUIREMENT_TYPE.
+OTM.SHIPMENT_STOP,STOP_TYPE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column STOP_TYPE.
+OTM.SHIPMENT_STOP,UPDATE_DATE,,,datetime2,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT_STOP,UPDATE_USER,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column UPDATE_USER.
+OTM.SHIPMENT_STOP,VOYAGE_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT_STOP,WAIT_TIME,,,float,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT_STOP,WAIT_TIME_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column WAIT_TIME_BASE.
+OTM.SHIPMENT_STOP,WAIT_TIME_UOM_CODE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column WAIT_TIME_UOM_CODE.
+OTM.SHIPMENT_STOP_D,ACTIVITY,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ACTIVITY.
+OTM.SHIPMENT_STOP_D,ACTIVITY_TIME,,,float,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT_STOP_D,ACTIVITY_TIME_BASE,,,float,Contains all shipment records and their logistical details.,Business-specific data stored in column ACTIVITY_TIME_BASE.
+OTM.SHIPMENT_STOP_D,ACTIVITY_TIME_UOM_CODE,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column ACTIVITY_TIME_UOM_CODE.
+OTM.SHIPMENT_STOP_D,DOMAIN_NAME,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column DOMAIN_NAME.
+OTM.SHIPMENT_STOP_D,INSERT_DATE,,,datetime2,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT_STOP_D,INSERT_USER,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column INSERT_USER.
+OTM.SHIPMENT_STOP_D,IS_PERMANENT,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column IS_PERMANENT.
+OTM.SHIPMENT_STOP_D,MTBI_BUSINESS_UNIT,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column MTBI_BUSINESS_UNIT.
+OTM.SHIPMENT_STOP_D,S_SHIP_UNIT_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT_STOP_D,S_SHIP_UNIT_GID,S_SHIP_UNIT,S_SHIP_UNIT_GID,nvarchar,Contains all shipment records and their logistical details.,References S_SHIP_UNIT table using column S_SHIP_UNIT_GID.
+OTM.SHIPMENT_STOP_D,S_SHIP_UNIT_GID,S_SHIP_UNIT_LINE,S_SHIP_UNIT_GID,nvarchar,Contains all shipment records and their logistical details.,References S_SHIP_UNIT_LINE table using column S_SHIP_UNIT_GID.
+OTM.SHIPMENT_STOP_D,SHIPMENT_GID,,,nvarchar,Contains all shipment records and their logistical details.,Unique identifier used to link records.
+OTM.SHIPMENT_STOP_D,SHIPMENT_GID,SHIPMENT,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP_D,SHIPMENT_GID,SHIPMENT_ACCESSORIAL,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_ACCESSORIAL table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP_D,SHIPMENT_GID,SHIPMENT_BILL,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_BILL table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP_D,SHIPMENT_GID,SHIPMENT_INF_COST,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_INF_COST table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP_D,SHIPMENT_GID,SHIPMENT_INF_COST_D,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_INF_COST_D table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP_D,SHIPMENT_GID,SHIPMENT_INVOLVED_PARTY,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_INVOLVED_PARTY table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP_D,SHIPMENT_GID,SHIPMENT_ORDER_RELEASE_JOIN,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_ORDER_RELEASE_JOIN table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP_D,SHIPMENT_GID,SHIPMENT_REFNUM,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_REFNUM table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP_D,SHIPMENT_GID,SHIPMENT_REMARK,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_REMARK table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP_D,SHIPMENT_GID,SHIPMENT_S_EQUIPMENT_JOIN,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_S_EQUIPMENT_JOIN table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP_D,SHIPMENT_GID,SHIPMENT_SPECIAL_SERVICE,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_SPECIAL_SERVICE table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP_D,SHIPMENT_GID,SHIPMENT_STATUS,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_STATUS table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP_D,SHIPMENT_GID,SHIPMENT_STOP,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_STOP table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP_D,SHIPMENT_GID,SHIPMENT_STOP_REFNUM,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SHIPMENT_STOP_REFNUM table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP_D,SHIPMENT_GID,SS_EQUIPMENT_STATUS_HISTORY,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SS_EQUIPMENT_STATUS_HISTORY table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP_D,SHIPMENT_GID,SS_STATUS_HISTORY,SHIPMENT_GID,nvarchar,Contains all shipment records and their logistical details.,References SS_STATUS_HISTORY table using column SHIPMENT_GID.
+OTM.SHIPMENT_STOP_D,STOP_NUM,SHIPMENT_STOP,STOP_NUM,bigint,Contains all shipment records and their logistical details.,References SHIPMENT_STOP table using column STOP_NUM.
+OTM.SHIPMENT_STOP_D,STOP_NUM,SHIPMENT_STOP_REFNUM,STOP_NUM,bigint,Contains all shipment records and their logistical details.,References SHIPMENT_STOP_REFNUM table using column STOP_NUM.
+OTM.SHIPMENT_STOP_D,UPDATE_DATE,,,datetime2,Contains all shipment records and their logistical details.,Date or timestamp associated with the transaction or event.
+OTM.SHIPMENT_STOP_D,UPDATE_USER,,,nvarchar,Contains all shipment records and their logistical details.,Business-specific data stored in column UPDATE_USER.

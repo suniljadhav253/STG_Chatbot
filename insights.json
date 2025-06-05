@@ -1,0 +1,582 @@
+{
+  "workplaces": {
+    "default_workplace": {
+      "name": "My Default Workplace",
+      "insights": []
+    },
+    "wp_b7156837": {
+      "name": "Shipment Analysis",
+      "insights": [
+        {
+          "id": "insight_what_is_the_top_5_sh_dd84a95c",
+          "query": "what is the top 5 shipment count by source and destination location names, show me using pie chart",
+          "type": "table",
+          "data": {
+            "headers": [
+              "SourceLocationName",
+              "DestinationLocationName",
+              "ShipmentCount"
+            ],
+            "rows": [
+              [
+                "MORTON SALT COMPANY 42598",
+                "SPRINGFIELD",
+                "70"
+              ],
+              [
+                "MORTON SALT COMPANY 42598",
+                "HARVARD",
+                "59"
+              ],
+              [
+                "HARVARD",
+                "JONESBORO",
+                "50"
+              ],
+              [
+                "ANTOLIN ALABAMA",
+                "GRUPO NASHVILLE",
+                "50"
+              ],
+              [
+                "ANTOLIN ALABAMA",
+                "GRUPO NASHVILLE",
+                "50"
+              ]
+            ]
+          },
+          "options": null,
+          "summary": "Found 5 records for 'what is the top 5 shipment count by source and destination location names, show me using pie chart'.",
+          "timestamp": "2025-06-03T11:27:49.526Z"
+        },
+        {
+          "id": "insight_give_me_pie_char_for_dadbe768",
+          "query": "give me pie char for total shipments by start_time year",
+          "type": "scatter",
+          "data": {
+            "datasets": [
+              {
+                "backgroundColor": "rgba(255, 99, 132, 0.7)",
+                "data": [
+                  {
+                    "x": 2024,
+                    "y": 1903
+                  },
+                  {
+                    "x": 2022,
+                    "y": 1
+                  },
+                  {
+                    "x": 2025,
+                    "y": 1087
+                  }
+                ],
+                "label": "Relationship: Startyear vs Totalshipments"
+              }
+            ],
+            "labels": []
+          },
+          "options": {
+            "maintainAspectRatio": false,
+            "plugins": {
+              "legend": {
+                "display": false,
+                "position": "top"
+              },
+              "title": {
+                "display": true,
+                "text": "Relationship: Startyear vs Totalshipments"
+              }
+            },
+            "responsive": true,
+            "scales": {
+              "x": {
+                "axis": "x",
+                "title": {
+                  "display": true,
+                  "text": "Startyear",
+                  "padding": {
+                    "top": 4,
+                    "bottom": 4
+                  },
+                  "color": "#666"
+                },
+                "type": "linear",
+                "ticks": {
+                  "minRotation": 0,
+                  "maxRotation": 50,
+                  "mirror": false,
+                  "textStrokeWidth": 0,
+                  "textStrokeColor": "",
+                  "padding": 3,
+                  "display": true,
+                  "autoSkip": true,
+                  "autoSkipPadding": 3,
+                  "labelOffset": 0,
+                  "minor": {},
+                  "major": {},
+                  "align": "center",
+                  "crossAlign": "near",
+                  "showLabelBackdrop": false,
+                  "backdropColor": "rgba(255, 255, 255, 0.75)",
+                  "backdropPadding": 2,
+                  "color": "#666"
+                },
+                "display": true,
+                "offset": false,
+                "reverse": false,
+                "beginAtZero": false,
+                "bounds": "ticks",
+                "clip": true,
+                "grace": 0,
+                "grid": {
+                  "display": true,
+                  "lineWidth": 1,
+                  "drawOnChartArea": true,
+                  "drawTicks": true,
+                  "tickLength": 8,
+                  "offset": false,
+                  "color": "rgba(0,0,0,0.1)"
+                },
+                "border": {
+                  "display": true,
+                  "dash": [],
+                  "dashOffset": 0,
+                  "width": 1,
+                  "color": "rgba(0,0,0,0.1)"
+                },
+                "id": "x",
+                "position": "bottom"
+              },
+              "y": {
+                "axis": "y",
+                "title": {
+                  "display": true,
+                  "text": "Totalshipments",
+                  "padding": {
+                    "top": 4,
+                    "bottom": 4
+                  },
+                  "color": "#666"
+                },
+                "type": "linear",
+                "ticks": {
+                  "minRotation": 0,
+                  "maxRotation": 50,
+                  "mirror": false,
+                  "textStrokeWidth": 0,
+                  "textStrokeColor": "",
+                  "padding": 3,
+                  "display": true,
+                  "autoSkip": true,
+                  "autoSkipPadding": 3,
+                  "labelOffset": 0,
+                  "minor": {},
+                  "major": {},
+                  "align": "center",
+                  "crossAlign": "near",
+                  "showLabelBackdrop": false,
+                  "backdropColor": "rgba(255, 255, 255, 0.75)",
+                  "backdropPadding": 2,
+                  "color": "#666"
+                },
+                "display": true,
+                "offset": false,
+                "reverse": false,
+                "beginAtZero": false,
+                "bounds": "ticks",
+                "clip": true,
+                "grace": 0,
+                "grid": {
+                  "display": true,
+                  "lineWidth": 1,
+                  "drawOnChartArea": true,
+                  "drawTicks": true,
+                  "tickLength": 8,
+                  "offset": false,
+                  "color": "rgba(0,0,0,0.1)"
+                },
+                "border": {
+                  "display": true,
+                  "dash": [],
+                  "dashOffset": 0,
+                  "width": 1,
+                  "color": "rgba(0,0,0,0.1)"
+                },
+                "id": "y",
+                "position": "left"
+              }
+            }
+          },
+          "summary": "Relationship: Startyear vs Totalshipments",
+          "timestamp": "2025-06-04T09:49:50.130Z"
+        },
+        {
+          "id": "insight_Display_total_weight_519b8d4b",
+          "query": "Display total weight per destination location name in a pie chart for the top 5 destinations",
+          "type": "pie",
+          "data": {
+            "datasets": [
+              {
+                "backgroundColor": [
+                  "rgba(255,99,132,0.7)",
+                  "rgba(54,162,235,0.7)",
+                  "rgba(255,206,86,0.7)",
+                  "rgba(75,192,192,0.7)",
+                  "rgba(153,102,255,0.7)",
+                  "rgba(255,159,64,0.7)"
+                ],
+                "data": [
+                  9750836.32,
+                  8748756.739999998,
+                  7389837.583010711,
+                  3876701.9098,
+                  3810210.429894
+                ],
+                "label": "Totalweight"
+              }
+            ],
+            "labels": [
+              "THE CAVES C/O GRUPO ANTOLIN",
+              "ANTOLIN SHELBY INC.",
+              "INTERIOR MEXICO TOLUCA CORE",
+              "SPRINGFIELD",
+              "HARVARD"
+            ]
+          },
+          "options": {
+            "maintainAspectRatio": false,
+            "plugins": {
+              "legend": {
+                "display": true,
+                "position": "top"
+              },
+              "title": {
+                "display": true,
+                "text": "Totalweight by Location Name"
+              }
+            },
+            "responsive": true,
+            "scales": {}
+          },
+          "summary": "Totalweight by Location Name",
+          "timestamp": "2025-06-04T10:19:54.978Z"
+        },
+        {
+          "id": "insight_what_is_the_total_sh_5944696b",
+          "query": "what is the total shipments present?",
+          "type": "table",
+          "data": {
+            "headers": [
+              "TotalShipments"
+            ],
+            "rows": [
+              [
+                "2991"
+              ]
+            ]
+          },
+          "options": null,
+          "summary": "The Totalshipments is: 2991.",
+          "timestamp": "2025-06-04T10:59:17.385Z"
+        },
+        {
+          "id": "insight_Distribution_of_ship_ee8ddec8",
+          "query": "Distribution of shipment types.",
+          "type": "pie",
+          "data": {
+            "datasets": [
+              {
+                "backgroundColor": [
+                  "rgba(255,99,132,0.7)",
+                  "rgba(54,162,235,0.7)",
+                  "rgba(255,206,86,0.7)",
+                  "rgba(75,192,192,0.7)",
+                  "rgba(153,102,255,0.7)",
+                  "rgba(255,159,64,0.7)"
+                ],
+                "data": [
+                  2945,
+                  46
+                ],
+                "label": "Shipmentcount"
+              }
+            ],
+            "labels": [
+              "TRANSPORT",
+              "VOR"
+            ]
+          },
+          "options": {
+            "maintainAspectRatio": false,
+            "plugins": {
+              "legend": {
+                "display": true,
+                "position": "top"
+              },
+              "title": {
+                "display": true,
+                "text": "Shipmentcount by Shipment Type Gid"
+              }
+            },
+            "responsive": true,
+            "scales": {}
+          },
+          "summary": "Shipmentcount by Shipment Type Gid",
+          "timestamp": "2025-06-04T11:08:10.790Z"
+        },
+        {
+          "id": "insight_How_many_shipments_f_37d4fa8c",
+          "query": "How many shipments fall into different cost brackets (e.g., <$500, $500-$1000, >$1000)?",
+          "type": "pie",
+          "data": {
+            "datasets": [
+              {
+                "backgroundColor": [
+                  "rgba(255,99,132,0.7)",
+                  "rgba(54,162,235,0.7)",
+                  "rgba(255,206,86,0.7)",
+                  "rgba(75,192,192,0.7)",
+                  "rgba(153,102,255,0.7)",
+                  "rgba(255,159,64,0.7)"
+                ],
+                "data": [
+                  1851,
+                  855,
+                  285
+                ],
+                "label": "Shipment Count"
+              }
+            ],
+            "labels": [
+              "<$500",
+              "> $1000",
+              "$500-$1000"
+            ]
+          },
+          "options": {
+            "maintainAspectRatio": false,
+            "plugins": {
+              "legend": {
+                "display": true,
+                "position": "top"
+              },
+              "title": {
+                "display": true,
+                "text": "Shipment Count by Cost Bracket"
+              }
+            },
+            "responsive": true,
+            "scales": {}
+          },
+          "summary": "Shipment Count by Cost Bracket",
+          "timestamp": "2025-06-04T11:08:44.655Z"
+        }
+      ]
+    },
+    "default_wp_001": {
+      "name": "My General Insights",
+      "insights": [
+        {
+          "id": "insight_Show_me_linear_scale_a27a0428",
+          "query": "Show me linear scale min max chart for total actual cost trend by month using START_TIME",
+          "type": "scatter",
+          "data": {
+            "datasets": [
+              {
+                "backgroundColor": "rgba(255, 99, 132, 0.7)",
+                "data": [
+                  {
+                    "x": 2022,
+                    "y": 4
+                  },
+                  {
+                    "x": 2024,
+                    "y": 7
+                  },
+                  {
+                    "x": 2024,
+                    "y": 8
+                  },
+                  {
+                    "x": 2024,
+                    "y": 9
+                  },
+                  {
+                    "x": 2024,
+                    "y": 10
+                  },
+                  {
+                    "x": 2024,
+                    "y": 11
+                  },
+                  {
+                    "x": 2024,
+                    "y": 12
+                  },
+                  {
+                    "x": 2025,
+                    "y": 1
+                  },
+                  {
+                    "x": 2025,
+                    "y": 2
+                  },
+                  {
+                    "x": 2025,
+                    "y": 3
+                  },
+                  {
+                    "x": 2025,
+                    "y": 4
+                  },
+                  {
+                    "x": 2025,
+                    "y": 9
+                  }
+                ],
+                "label": "Relationship: Year vs Month"
+              }
+            ],
+            "labels": []
+          },
+          "options": {
+            "maintainAspectRatio": false,
+            "plugins": {
+              "legend": {
+                "display": false,
+                "position": "top"
+              },
+              "title": {
+                "display": true,
+                "text": "Relationship: Year vs Month"
+              }
+            },
+            "responsive": true,
+            "scales": {
+              "x": {
+                "axis": "x",
+                "title": {
+                  "display": true,
+                  "text": "Year",
+                  "padding": {
+                    "top": 4,
+                    "bottom": 4
+                  },
+                  "color": "#666"
+                },
+                "type": "linear",
+                "ticks": {
+                  "minRotation": 0,
+                  "maxRotation": 50,
+                  "mirror": false,
+                  "textStrokeWidth": 0,
+                  "textStrokeColor": "",
+                  "padding": 3,
+                  "display": true,
+                  "autoSkip": true,
+                  "autoSkipPadding": 3,
+                  "labelOffset": 0,
+                  "minor": {},
+                  "major": {},
+                  "align": "center",
+                  "crossAlign": "near",
+                  "showLabelBackdrop": false,
+                  "backdropColor": "rgba(255, 255, 255, 0.75)",
+                  "backdropPadding": 2,
+                  "color": "#666"
+                },
+                "display": true,
+                "offset": false,
+                "reverse": false,
+                "beginAtZero": false,
+                "bounds": "ticks",
+                "clip": true,
+                "grace": 0,
+                "grid": {
+                  "display": true,
+                  "lineWidth": 1,
+                  "drawOnChartArea": true,
+                  "drawTicks": true,
+                  "tickLength": 8,
+                  "offset": false,
+                  "color": "rgba(0,0,0,0.1)"
+                },
+                "border": {
+                  "display": true,
+                  "dash": [],
+                  "dashOffset": 0,
+                  "width": 1,
+                  "color": "rgba(0,0,0,0.1)"
+                },
+                "id": "x",
+                "position": "bottom"
+              },
+              "y": {
+                "axis": "y",
+                "title": {
+                  "display": true,
+                  "text": "Month",
+                  "padding": {
+                    "top": 4,
+                    "bottom": 4
+                  },
+                  "color": "#666"
+                },
+                "type": "linear",
+                "ticks": {
+                  "minRotation": 0,
+                  "maxRotation": 50,
+                  "mirror": false,
+                  "textStrokeWidth": 0,
+                  "textStrokeColor": "",
+                  "padding": 3,
+                  "display": true,
+                  "autoSkip": true,
+                  "autoSkipPadding": 3,
+                  "labelOffset": 0,
+                  "minor": {},
+                  "major": {},
+                  "align": "center",
+                  "crossAlign": "near",
+                  "showLabelBackdrop": false,
+                  "backdropColor": "rgba(255, 255, 255, 0.75)",
+                  "backdropPadding": 2,
+                  "color": "#666"
+                },
+                "display": true,
+                "offset": false,
+                "reverse": false,
+                "beginAtZero": false,
+                "bounds": "ticks",
+                "clip": true,
+                "grace": 0,
+                "grid": {
+                  "display": true,
+                  "lineWidth": 1,
+                  "drawOnChartArea": true,
+                  "drawTicks": true,
+                  "tickLength": 8,
+                  "offset": false,
+                  "color": "rgba(0,0,0,0.1)"
+                },
+                "border": {
+                  "display": true,
+                  "dash": [],
+                  "dashOffset": 0,
+                  "width": 1,
+                  "color": "rgba(0,0,0,0.1)"
+                },
+                "id": "y",
+                "position": "left"
+              }
+            }
+          },
+          "summary": "Relationship: Year vs Month",
+          "timestamp": "2025-06-04T10:43:46.772Z"
+        }
+      ]
+    }
+  },
+  "activeWorkplaceId": "default_workplace"
+}

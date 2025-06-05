@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights Hub - RXO Logistics AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/charts.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <!-- Optional: date adapter for time scales -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script> -->
+</head>
+<body>
+    <header>
+        <h1>RXO Logistics AI - Insights Hub</h1>
+        <nav>
+            <a href="{{ url_for('main.chat') }}">Chat Assistant</a>
+            <a href="{{ url_for('main.insights_page') }}">Insights Hub</a>
+            <a href="{{ url_for('main.charts_showcase_page') }}">Chart Showcase</a>
+        </nav>
+        <button id="theme-toggle-button" aria-label="Toggle theme">🌓</button>
+    </header>
+
+    <main id="insights-page-container">
+        <div class="workplace-management">
+            <h2>Workplaces</h2>
+            <div class="workplace-actions">
+                <input type="text" id="new-hub-workplace-name" placeholder="New workplace name...">
+                <button id="create-hub-workplace-btn" title="Create New Workplace">Create</button>
+            </div>
+            <div class="workplace-selection-area">
+                <label for="hub-workplace-select">Current Workplace:</label>
+                <select id="hub-workplace-select">
+                    <!-- Options populated by JS -->
+                </select>
+                <button id="delete-selected-workplace-btn" title="Delete Selected Workplace">Delete Workplace</button>
+            </div>
+        </div>
+
+        <div id="insights-grid">
+            <h2 id="current-workplace-title">Insights</h2>
+            <div class="controls">
+                <p><em>Filter options and layout controls (e.g., grid/list view) can be added here.</em></p>
+            </div>
+            <div id="charts-container">
+                <p>Select a workplace to view its saved insights.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 RXO Logistics</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/insights.js') }}"></script>
+    <script>
+        // Basic theme toggle logic (can be in a shared JS file)
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleButton = document.getElementById('theme-toggle-button');
+            const body = document.body;
+            function applyTheme(theme) {
+                if (theme === 'dark') { body.classList.add('dark-mode'); } 
+                else { body.classList.remove('dark-mode'); }
+            }
+            if (themeToggleButton) {
+                themeToggleButton.addEventListener('click', () => {
+                    body.classList.toggle('dark-mode');
+                    localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
+                });
+            }
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) { applyTheme(savedTheme); }
+            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) { applyTheme('dark'); }
+        });
+    </script>
+</body>
+</html>

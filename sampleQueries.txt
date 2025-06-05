@@ -1,0 +1,70 @@
+Basic Counts & Aggregations (KPIs / Single Values)
+
+"What is the total number of shipments recorded?"
+"Calculate the total actual cost for all shipments."
+"How many unique destination locations are there?"
+"What's the average shipment weight?" (Assumes a TOTAL_WEIGHT column)
+"Total planned cost for shipments in the last quarter using START_TIME."
+"Number of shipments currently in 'IN TRANSIT' status." (Assumes a STATUS column)
+Distributions & Proportions (Pie/Doughnut/Bar Charts)
+
+"Show me the distribution of shipments by transport mode as a pie chart." (Assumes TRANSPORT_MODE_GID joined to a name)
+"What percentage of shipments are hazardous? Display in a doughnut chart." (Assumes IS_HAZARDOUS flag)
+"Breakdown of shipment count by service provider name. Show as a bar chart." (Assumes SERVPROV_GID joined to name)
+"Distribution of shipment types." (Assumes SHIPMENT_TYPE_GID joined to name)
+"How many shipments fall into different cost brackets (e.g., <$500, $500-$1000, >$1000)?" (More complex, might require LLM to generate CASE statements or for you to have pre-defined brackets)
+Trends Over Time (Line/Area Charts)
+
+"Show the trend of total shipment count by month using START_TIME."
+"Plot the total actual cost of shipments over the last 6 months based on END_TIME as a line chart."
+"Monthly trend of average shipment weight using INSERT_DATE."
+"Display the cumulative shipment volume over the year using START_TIME as an area chart."
+"Trend of min and max TOTAL_ACTUAL_COST by month using START_TIME." (Like your previous successful query)
+Comparisons & Rankings (Bar Charts)
+
+"Top 10 destination locations by shipment count." (Should use LOCATION_NAME via join)
+"Which 5 service providers have the highest total actual cost?"
+"Compare the total weight shipped via different transport modes."
+"Bottom 5 origin locations by number of delayed shipments." (Requires joining to a delay table or using a delay flag/status)
+"Show me a horizontal bar chart of shipment counts for each SHIPMENT_TYPE_GID."
+Relationships & Correlations (Scatter/Bubble Charts)
+
+"Is there a relationship between total weight and total actual cost for shipments? Show as a scatter plot."
+"Visualize total volume vs total weight for all shipments."
+"Plot TOTAL_ACTUAL_COST against LOADED_DISTANCE as a scatter plot." (Assumes LOADED_DISTANCE column)
+"Show shipment count, total cost, and average weight by destination location as a bubble chart." (Bubble charts need X, Y, and bubble size (R) – LLM needs to pick 3 appropriate columns).
+Multi-dimensional Analysis (Grouped/Stacked Bars, Complex Tables)
+
+"Top 5 shipment counts by source location name and destination location name in descending order." (Your successful complex query, should result in a table or potentially a complex bar if categories are few)
+"Show total actual cost by transport mode and by year (using START_TIME) in a grouped bar chart."
+"Stacked bar chart of shipment counts per month (using START_TIME), segmented by SHIPMENT_TYPE_GID."
+Follow-up Questions (Testing Memory)
+
+(After "Total shipment count by year"): "What about for the previous year?"
+(After "Top 5 destinations by cost"): "Show me the details for the second one on that list."
+(After "Shipment distribution by transport mode"): "Which mode had the highest average cost?"
+Queries Testing Schema Understanding & Robustness
+
+"Find shipments that started late." (Requires LLM to understand "late" by comparing START_TIME to LATEST_START_TIME or EARLIEST_START_TIME)
+"Which shipments have no end time recorded but started more than 30 days ago?"
+"Are there any locations that are only origins and never destinations?"
+"List shipments with unusual cost to weight ratios." (Very subjective, tests LLM reasoning)
+Queries with Explicit (Less Common) Chart Type Requests
+
+"Show me the distribution of TOTAL_ACTUAL_COST in a histogram." (Analyzer would need to create bins)
+"Can I see the TOTAL_WEIGHT for different SERVPROV_GIDs using a polar area chart?"
+"What's the radar chart for average cost, average weight, and average loaded distance for the top 3 TRANSPORT_MODE_GIDs?" (Complex, requires multiple aggregations and then structuring for radar)
+"Give me a KPI tile for the total number of unique SHIPMENT_XID."
+"Show a treemap of total shipment count by SOURCE_LOCATION_GID." (If treemap plugin is working)
+Tips for Testing:
+
+Start Simple: Begin with basic counts and aggregations.
+Vary Phrasing: Ask for the same information in different ways.
+Introduce Ambiguity: See how the LLM handles less specific requests.
+Check Console Logs: Always monitor the Flask console for:
+Requested Chart Type from intent_detection_node.
+Retrieved schema parts from schema_retriever_node (are the right columns with good descriptions being fetched?).
+Generated SQL from sql_generator_node.
+Any errors from sql_executor_node.
+The chosen chart type and analysis_summary from analyzer_visualizer_node.
+Iterate on database_schema.csv: If the LLM struggles with specific columns or concepts, the first place to improve is usually the descriptions in your CSV, followed by re-indexing.

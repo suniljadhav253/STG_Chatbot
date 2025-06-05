@@ -1,0 +1,147 @@
+/* app/static/css/charts.css */
+
+/* General Chart Wrapper Styling (used in chat.js and insights.js) */
+.chart-wrapper {
+    margin-top: 10px;
+    padding: 15px; /* Increased padding */
+    background-color: #ffffff; 
+    border: 1px solid #e9ecef; /* Lighter border */
+    border-radius: 8px;
+    box-sizing: border-box;
+    max-width: 100%; 
+    position: relative; 
+    min-height: 300px; /* Slightly larger min-height */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.chart-wrapper canvas {
+    max-width: 100%;
+    max-height: 450px; /* Increased max height */
+    height: auto !important; 
+}
+
+/* Chart title rendered by Chart.js options is preferred. This class is a fallback if JS adds it. */
+.chart-title-text { 
+    font-size: 1em; /* Larger title */
+    font-weight: 600;
+    color: #343a40; /* Darker title */
+    margin-bottom: 12px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Styling for the 'Save to Workplace' button on charts in chat */
+.save-to-workplace-btn {
+    position: absolute;
+    top: 10px; /* Adjusted positioning */
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px; /* Slightly larger */
+    height: 32px;
+    font-size: 1.3em;
+    line-height: 32px; 
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    z-index: 10; 
+}
+.save-to-workplace-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+.save-to-workplace-btn:active {
+    transform: scale(0.95);
+}
+
+
+/* Dark Mode for Chart Wrappers */
+body.dark-mode .chart-wrapper {
+    background-color: #21262d; /* GitHub dark component background */
+    border-color: #30363d; /* GitHub dark border */
+}
+
+body.dark-mode .chart-title-text { /* Fallback title text */
+    color: #c9d1d9;
+}
+
+body.dark-mode .save-to-workplace-btn {
+    background-color: #238636; /* GitHub green */
+    color: #f0f6fc;
+}
+body.dark-mode .save-to-workplace-btn:hover {
+    background-color: #2ea043;
+}
+
+/* Specific for Insights Hub cards if needed */
+.insight-card .chart-wrapper {
+    min-height: 300px; /* Default for insights hub cards */
+    margin-top: 10px; /* Space from summary text */
+    padding: 12px; /* Slightly less padding inside card's chart wrapper */
+}
+
+/* Modal for selecting workplace (basic styling) */
+.workplace-modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    z-index: 1001; /* Ensure it's above other elements */
+    width: 90%;
+    max-width: 400px; /* Max width for modal */
+    border: 1px solid #dee2e6;
+}
+.workplace-modal h4 { margin-top: 0; margin-bottom: 20px; font-size: 1.2em; color: #343a40; }
+.workplace-modal label { display: block; margin-bottom: 5px; font-weight: 500; font-size: 0.9em; color: #495057;}
+.workplace-modal select, .workplace-modal input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 0.95em;
+}
+.workplace-modal hr { border: 0; border-top: 1px solid #e9ecef; margin: 20px 0; }
+.workplace-modal .modal-actions { text-align: right; margin-top:10px; }
+.workplace-modal button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 8px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+.workplace-modal button.primary { background-color: #007bff; color: white; }
+.workplace-modal button.primary:hover { background-color: #0056b3; }
+.workplace-modal button.secondary { background-color: #6c757d; color: white; }
+.workplace-modal button.secondary:hover { background-color: #545b62; }
+
+body.dark-mode .workplace-modal {
+    background-color: #161b22; /* GitHub dark component bg */
+    border-color: #30363d;
+    color: #c9d1d9;
+}
+body.dark-mode .workplace-modal h4 { color: #f0f6fc; }
+body.dark-mode .workplace-modal label { color: #8b949e; }
+body.dark-mode .workplace-modal select, 
+body.dark-mode .workplace-modal input[type="text"] {
+    background-color: #0d1117; /* GitHub dark input bg */
+    border-color: #30363d;
+    color: #c9d1d9;
+}
+body.dark-mode .workplace-modal button.primary { background-color: #238636; } /* GitHub green */
+body.dark-mode .workplace-modal button.primary:hover { background-color: #2ea043; }
+body.dark-mode .workplace-modal button.secondary { background-color: #30363d; }
+body.dark-mode .workplace-modal button.secondary:hover { background-color: #484f58; }
